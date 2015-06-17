@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-themes-extras</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>data</IsA>
+        <Summary>MATE Desktop themes</Summary>
+        <Description>mate-themes-extras, mate masaüstü temalarını barındırır.</Description>
+        <Archive sha1sum="5c0089061671de4f230d00c3dcdb5b6580e578e4" type="targz">https://github.com/NiceandGently/mate-themes-extras/archive/v3.14.6.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>mate-themes-extras</Name>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/themes</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-10-18</Date>
+            <Version>3.14.6</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

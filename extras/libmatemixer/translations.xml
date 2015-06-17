@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>libmatemixer</Name>        
+        <Summary xml:lang="en">Mixer library for MATE Desktop</Summary>
+        <Description xml:lang="en">libmatemixer is a mixer library for MATE desktop.</Description>
+    </Source>
+
+    <Package>
+        <Name>libmatemixer-devel</Name>
+        <Summary xml:lang="en">Development for files libmatemixer</Summary>
+    </Package>
+
+    <Package>
+        <Name>libmatemixer-doc</Name>
+        <Summary xml:lang="en">libmatemixer-doc, Documentation files</Summary>
+    </Package>
+</PISI>
