@@ -1,0 +1,3849 @@
+<PISI>
+    <SpecFile>
+        <Source>
+            <Name>libmateweather</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">libmateweather</Summary>
+            <Summary xml:lang="tr">libmateweather</Summary>
+            <Description xml:lang="en">libmateweather is a collection of documentation utilities for the Mate project.</Description>
+            <Description xml:lang="tr">libmateweather Mate Projesi&apos;nin bir parçasıdır.</Description>
+            <Archive type="tarxz" sha1sum="938c0063bf622c729b9ab33ea05cf37ea012be5e">http://pub.mate-desktop.org/releases/1.10/libmateweather-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libsoup-devel</Dependency>
+                <Dependency>libsoup-gnome</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/libmateweather/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libmateweather</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/libmateweather</Path>
+                <Path fileType="library">/usr/lib/libmateweather*</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libmateweather-devel</Name>
+            <Summary xml:lang="en">libmateweather için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>libsoup-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency release="4">libmateweather</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/libmateweather/</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libmateweather-doc</Name>
+            <Summary xml:lang="en">libmateweather için döküman belgeleri.</Summary>
+            <Summary xml:lang="tr">libmateweather için döküman belgeleri.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">libmateweather</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-09-10</Date>
+                <Version>1.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-themes-extras</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">MATE Desktop themes</Summary>
+            <Summary xml:lang="tr">Mate temaları</Summary>
+            <Description xml:lang="en">mate-themes-extras, mate masaüstü temalarını barındırır.</Description>
+            <Description xml:lang="tr">mate-themes-extras, mate masaüstü temalarını barındırır.</Description>
+            <Archive type="targz" sha1sum="5c0089061671de4f230d00c3dcdb5b6580e578e4">https://github.com/NiceandGently/mate-themes-extras/archive/v3.14.6.tar.gz</Archive>
+            <SourceURI>base/mate-themes-extras/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-themes-extras</Name>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/themes</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>3.14.6</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-panel</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">GNOME panel</Summary>
+            <Summary xml:lang="tr">Mate paneli</Summary>
+            <Description xml:lang="en">GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
+            <Description xml:lang="tr">Mate paneli ekranın kenarlarında bulunur ve  programcıkları (işlemci yükü, program başlatıcısı, çalışma alanı değiştiricisi gibi) barındırmayı sağlar.</Description>
+            <Icon>mate-panel</Icon>
+            <Archive type="tarxz" sha1sum="632d7127fba8c5fa76f5dd951db89325c6ca3f89">http://pub.mate-desktop.org/releases/1.10/mate-panel-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>libwnck2-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>mate-menus-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+                <Dependency>libmateweather-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-panel/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-panel</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libwnck2</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>mate-menus</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>libmateweather</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/MateConf</Path>
+                <Path fileType="executable">/usr/libexec/</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-panel-devel</Name>
+            <Summary xml:lang="en">mate-panel için geliştirme dosyaları.</Summary>
+            <Summary xml:lang="tr">mate-panel için geliştirme dosyaları.</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency release="5">mate-panel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-panel-doc</Name>
+            <Summary xml:lang="en">mate-panel için döküman belgeleri.</Summary>
+            <Summary xml:lang="tr">mate-panel için döküman belgeleri.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="5">mate-panel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-10</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-04</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>marco</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">GTK+ based window manager</Summary>
+            <Summary xml:lang="tr">GTK+ tabanlı pencere yöneticisi</Summary>
+            <Description xml:lang="en">Marco is a small window manager, using GTK+ to do everything.</Description>
+            <Description xml:lang="tr">Marco herşeyi yapmak için GTK+ kullanan, küçük bir pencere yöneticisidir.</Description>
+            <Archive type="tarxz" sha1sum="aada9e6e34d9aa86771021ffca14d4f1482f2310">http://pub.mate-desktop.org/releases/1.10/marco-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>zenity</Dependency>
+                <Dependency>itstool</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>mate-dialogs</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libgtop-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>libXcursor-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>libXdamage-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>libXinerama-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+                <Dependency>startup-notification-devel</Dependency>
+                <Dependency versionFrom="1.10.0">mate-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/marco/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>marco</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libXinerama</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>startup-notification</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/marco</Path>
+                <Path fileType="data">/usr/share/themes</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+                <Path fileType="data">/usr/share/mate-control-center</Path>
+                <Path fileType="data">/usr/share/applications/marco.desktop</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-window-manager</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-window-manager</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>marco-devel</Name>
+            <Summary xml:lang="en">marco development files</Summary>
+            <Summary>marco için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency release="4">marco</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-window-manager-devel</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-window-manager-devel</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-09-17</Date>
+                <Version>1.8.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-08-10</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-common</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3+</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Common files for development of Mate packages</Summary>
+            <Summary xml:lang="tr">Mate uygulamalarının geliştirmede kullandığı yaygın dosyalar</Summary>
+            <Description xml:lang="en">maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>
+            <Description xml:lang="tr">mate-common, MATE ortamı için autoconf, automake ve libtool uzantısıdır.</Description>
+            <Archive type="tarxz" sha1sum="8fa8603168e839f645603f52757cab5e3b4d8595">http://pub.mate-desktop.org/releases/1.10/mate-common-1.10.0.tar.xz</Archive>
+            <SourceURI>base/mate-common/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-common</Name>
+            <Files>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/aclocal</Path>
+                <Path fileType="data">/usr/share/mate-common</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-09-10</Date>
+                <Version>1.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-polkit</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Authentication agent for polkit</Summary>
+            <Summary xml:lang="tr">polkit için kimlik denetim yardımcısı</Summary>
+            <Description xml:lang="en">mate-polkit package provides an authentication agent for polkit that integrates well with the Mate desktop environment.</Description>
+            <Description xml:lang="tr">mate-polkit paketi Mate masaüstü ortamı ile bütünleşmiş bir kimlik denetim yardımcısı sağlar.</Description>
+            <Archive type="tarxz" sha1sum="8e8e641a1e6867a5543b5cf25505db0f5c9a4663">http://pub.mate-desktop.org/releases/1.10/mate-polkit-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-polkit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-polkit</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="config">/etc/xdg/autostart</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-polkit-devel</Name>
+            <Summary xml:lang="en">mate-polkit için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">mate-polkit için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="5">mate-polkit</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-themes</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">MATE Desktop themes</Summary>
+            <Summary xml:lang="tr">Mate temaları</Summary>
+            <Description xml:lang="en">mate-themes, mate masaüstü temalarını barındırır.</Description>
+            <Description xml:lang="tr">mate-themes, mate masaüstü temalarını barındırır.</Description>
+            <Archive type="tarxz" sha1sum="199f6ff38e46fd55d9b51370b6b50b9781867f1e">http://pub.mate-desktop.org/releases/1.10/mate-themes-gtk3.14-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>gtk-engines</Dependency>
+                <Dependency>mate-icon-theme</Dependency>
+                <Dependency>icon-naming-utils</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gtk2-engines-murrine</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-themes/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-themes</Name>
+            <RuntimeDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>gtk-engines</Dependency>
+                <Dependency>mate-icon-theme</Dependency>
+                <Dependency>icon-naming-utils</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gtk2-engines-murrine</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/themes</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2013-02-02</Date>
+                <Version>1.6.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-11-13</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version bump</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-menus</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Mate Menus</Summary>
+            <Summary xml:lang="tr">Mate menüleri</Summary>
+            <Description xml:lang="en">mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>
+            <Description xml:lang="tr">mate-menus, Mate masaüstü dizinlerini, kitaplıklarını ve python bağlayıcılarını içerir.</Description>
+            <Archive type="tarxz" sha1sum="04662fc22aec5c37755029b8f8d8c56390c49807">http://pub.mate-desktop.org/releases/1.10/mate-menus-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>intltool</Dependency>
+                <Dependency>mate-common</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-menus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-menus</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/etc/xdg/menus</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/mate-menus</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-menus-devel</Name>
+            <Summary xml:lang="en">mate-menus için geliştirme dosyaları</Summary>
+            <Summary>mate-menus için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">mate-menus</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>caja</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Default file manager for the Mate desktop.</Summary>
+            <Summary xml:lang="tr">Mate masasütü için öntanımlı dosya yöneticisi</Summary>
+            <Description xml:lang="en">Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
+            <Description xml:lang="tr">Caja; dizinlerde gezinmeyi, dosyaları gözatmayı ve uygulamalar başlatmayı sağlayan bir dosya yöneticisidir.</Description>
+            <Icon>system-file-manager</Icon>
+            <Archive type="tarxz" sha1sum="559db3d17ea3dacccfba55b085be148687be94b1">http://pub.mate-desktop.org/releases/1.10/caja-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>exempi-devel</Dependency>
+                <Dependency>libexif-devel</Dependency>
+                <Dependency>libunique-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/caja/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>caja</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>exempi</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>mate-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share/caja</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-file-manager</Package>
+                <Package>mate-file-manager-gksu</Package>
+                <Package>mate-file-manager-share</Package>
+                <Package>mate-file-manager-sendto</Package>
+                <Package>mate-file-manager-open-terminal</Package>
+                <Package>mate-file-manager-image-converter</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-file-manager</Package>
+                <Package>mate-file-manager-gksu</Package>
+                <Package>mate-file-manager-share</Package>
+                <Package>mate-file-manager-sendto</Package>
+                <Package>mate-file-manager-open-terminal</Package>
+                <Package>mate-file-manager-image-converter</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>caja-devel</Name>
+            <Summary xml:lang="en">caja için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">caja için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency release="4">caja</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-file-manager-devel</Package>
+                <Package>mate-file-manager-sendto-devel</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-file-manager-devel</Package>
+                <Package>mate-file-manager-sendto-devel</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>caja-doc</Name>
+            <Summary xml:lang="en">caja için döküman belgeleri.</Summary>
+            <Summary xml:lang="tr">caja için döküman belgeleri.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">caja</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-file-manager-doc</Package>
+                <Package>mate-file-manager-sendto-doc</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-file-manager-doc</Package>
+                <Package>mate-file-manager-sendto-doc</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-08-19</Date>
+                <Version>1.8.1</Version>
+                <Comment>Caja fixed</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-backgrounds</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Default wallpapers for the Mate desktop</Summary>
+            <Summary xml:lang="tr">Mate masaüstü için öntanımlı duvar kağıtları</Summary>
+            <Description xml:lang="en">gnome-backgrounds contains default wallpapers for the Mate desktop.</Description>
+            <Description xml:lang="tr">mate-backgrounds, Mate masaüstü için öntanımlı duvar kağıtlarını içerir.</Description>
+            <Archive type="tarxz" sha1sum="53d2c57982f3fb4c1c1f791eaa4cf3dc8d78bc0a">http://pub.mate-desktop.org/releases/1.10/mate-backgrounds-1.10.0.tar.xz</Archive>
+            <AdditionalFiles>
+                <AdditionalFile target="nature/1.jpg">nature/1.jpg</AdditionalFile>
+                <AdditionalFile target="nature/2.jpg">nature/2.jpg</AdditionalFile>
+                <AdditionalFile target="nature/3.jpg">nature/3.jpg</AdditionalFile>
+                <AdditionalFile target="nature/4.jpg">nature/4.jpg</AdditionalFile>
+                <AdditionalFile target="nature/5.jpg">nature/5.jpg</AdditionalFile>
+                <AdditionalFile target="nature/6.jpg">nature/6.jpg</AdditionalFile>
+                <AdditionalFile target="nature/7.jpg">nature/7.jpg</AdditionalFile>
+                <AdditionalFile target="nature/8.jpg">nature/8.jpg</AdditionalFile>
+            </AdditionalFiles>
+            <BuildDependencies>
+                <Dependency>mate-common</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">mate-backgrounds-1.6.1-add-image.patch</Patch>
+            </Patches>
+            <SourceURI>base/mate-backgrounds/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-backgrounds</Name>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/backgrounds</Path>
+                <Path fileType="doc">/usr/share/mate-background-properties</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-02</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-04-04</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libmatekbd</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">GNOME keybord configration library</Summary>
+            <Summary xml:lang="tr">Mate klavye kontrol kütüphanesi</Summary>
+            <Description xml:lang="en">libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
+            <Description xml:lang="tr">Bu paket klavye ayarlarını yöneten bir Mate kütüphanesi ve onun panel programcığını içerir.</Description>
+            <Archive type="tarxz" sha1sum="d4e5b69dde4f57bbd01029bee2f414be98882897">http://pub.mate-desktop.org/releases/1.10/libmatekbd-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/libmatekbd/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libmatekbd</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libxklavier</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/libmatekbd</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="library">/usr/lib/libmatekbd*</Path>
+                <Path fileType="config">/etc/mateconf/schemas/</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libmatekbd-devel</Name>
+            <Summary xml:lang="en">libmatekbd için geliştirme dosyaları</Summary>
+            <Summary>libmatekbd için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency release="5">libmatekbd</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/libmatekbd</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-07-25</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-session-manager</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">MATE Session Manager</Summary>
+            <Description xml:lang="en">MATE session manager, as well as a configuration program to choose applications starting on login.</Description>
+            <Icon>mate-session-properties</Icon>
+            <Archive type="tarxz" sha1sum="e3b3a2a37d8b56c12a48c33522c198b24d90314d">http://pub.mate-desktop.org/releases/1.10/mate-session-manager-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>libXtst-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>mate-polkit-devel</Dependency>
+                <Dependency>icon-theme-hicolor</Dependency>
+                <Dependency>mate-control-center-devel</Dependency>
+                <Dependency>mate-settings-daemon-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-session-manager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-session-manager</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXrender</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/xsessions</Path>
+                <Path fileType="data">/usr/share/glib-2.0/</Path>
+                <Path fileType="data">/usr/share/mate-session</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings</Path>
+                <Path fileType="data">/usr/share/mate-session-manager/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-desktop</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>MIT</License>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Basic Mate libraries and dialogs</Summary>
+            <Summary xml:lang="tr">Mate masaüstü</Summary>
+            <Description xml:lang="en">mate-desktop contains basic Mate libraries and information applications.</Description>
+            <Description xml:lang="tr">mate-desktop, Mate kullanıcı ortamının paylaşımlı bileşenlerini içeren temel pakettir.</Description>
+            <Icon>desktop</Icon>
+            <Archive type="tarxz" sha1sum="ec52966a5f47730c16a9a9c6c1b95b73d7afee84">http://pub.mate-desktop.org/releases/1.10/mate-desktop-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>itstool</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>docbook-xsl</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libunique-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>startup-notification-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-desktop/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-desktop</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>startup-notification</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/gir-1.0/</Path>
+                <Path fileType="data">/usr/share/mate-about</Path>
+                <Path fileType="data">/usr/share/backgrounds</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/libmate-desktop</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-file-manager</Package>
+                <Package>mate-file-manager-gksu</Package>
+                <Package>mate-file-manager-share</Package>
+                <Package>mate-file-manager-sendto</Package>
+                <Package>mate-file-manager-open-terminal</Package>
+                <Package>mate-file-manager-image-converter</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>libmatewnck</Package>
+                <Package>mate-keyring</Package>
+                <Package>mate-doc-utils</Package>
+                <Package>libmatekeyring</Package>
+                <Package>libmatewnck-devel</Package>
+                <Package>mate-keyring-devel</Package>
+                <Package>mate-character-map</Package>
+                <Package>libmatekeyring-devel</Package>
+                <Package>mate-character-map-devel</Package>
+                <Package>mate-file-manager-image-converter</Package>
+            </Replaces>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/backgrounds/mate/nature/pisi.jpg" permission="0644" owner="root">pisi.jpg</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/package-manager-mcc.desktop" permission="0644" owner="root">package-manager-mcc.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>mate-desktop-devel</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>startup-notification-devel</Dependency>
+                <Dependency release="6">mate-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-desktop-doc</Name>
+            <Summary xml:lang="en">mate-desktop için döküman belgeleri.</Summary>
+            <Summary xml:lang="tr">mate-desktop için döküman belgeleri.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="6">mate-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="6">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-06-11</Date>
+                <Version>1.8.1</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2013-02-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-12-21</Date>
+                <Version>1.6.1</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-06-07</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-settings-daemon</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <IsA>service</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">System settings daemon for MATE desktop</Summary>
+            <Description xml:lang="en">gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
+            <Archive type="tarxz" sha1sum="ca2895f20c660f178317ef5e1b480bfddf9c34fc">http://pub.mate-desktop.org/releases/1.10/mate-settings-daemon-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>nss-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>gstreamer-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libmatekbd-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+                <Dependency>libXxf86misc-devel</Dependency>
+                <Dependency>gst-plugins-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-settings-daemon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-settings-daemon</Name>
+            <RuntimeDependencies>
+                <Dependency>nss</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libmatekbd</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>libXxf86misc</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man/</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings</Path>
+                <Path fileType="data">/usr/share/mate-control-center/</Path>
+                <Path fileType="data">/usr/share/mate-settings-daemon</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-settings-daemon-devel</Name>
+            <Summary xml:lang="en">mate-settings-daemon için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">mate-settings-daemon için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="5">mate-settings-daemon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-notification-daemon</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Mate notification daemon</Summary>
+            <Summary xml:lang="tr">Mate masaüstü bilgilendirme hizmeti</Summary>
+            <Description xml:lang="en">mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
+            <Description xml:lang="tr">mate-notification-daemon Mate projesinin masaüstü bilgilendirme hizmeti uygulamasını içerir.</Description>
+            <Icon>mate-notification-properties</Icon>
+            <Archive type="tarxz" sha1sum="44407390f6216fcea5e02615d8e2b57b2502f358">http://pub.mate-desktop.org/releases/1.10/mate-notification-daemon-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libwnck2-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-notification-daemon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-notification-daemon</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libwnck2</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="man">/usr/share/man/</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/MateConf</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/mate-notification-daemon</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="6">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-02-03</Date>
+                <Version>1.6.1</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-11-13</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-control-center</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">The MATE Desktop configuration tool</Summary>
+            <Summary xml:lang="tr">Mate yapılandırma araçları</Summary>
+            <Description xml:lang="en">mate-control-center is Mate&apos;s main interface for configuration of various aspects of your Mate desktop.</Description>
+            <Description xml:lang="tr">mate-control-center Mate masaüstünüzün çeşitli ayarlarını değiştiren, Mate&apos;in ana arayüzüdür.</Description>
+            <Icon>preferences-desktop</Icon>
+            <Archive type="tarxz" sha1sum="b720314054e8c417f32eeac8385b82d3849dace0">http://pub.mate-desktop.org/releases/1.10/mate-control-center-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>marco-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>libXft-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>libunique-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libXcursor-devel</Dependency>
+                <Dependency>mate-menus-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libmatekbd-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+                <Dependency>libXScrnSaver-devel</Dependency>
+                <Dependency>mate-settings-daemon-devel</Dependency>
+                <Dependency>itstool</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">0002_adjust_mate-about-me_dialog_window.diff</Patch>
+                <Patch level="1">0001_fix_keyboard_and_mouse_properties_windows.diff</Patch>
+            </Patches>
+            <SourceURI>base/mate-control-center/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-control-center</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>marco</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>libXft</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>mate-menus</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libmatekbd</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/thumbnailers</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+                <Path fileType="data">/usr/share/desktop-directories</Path>
+                <Path fileType="data">/usr/share/mate-control-center</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-control-center-devel</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>mate-menus-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+                <Dependency release="6">mate-control-center</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="6">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-09-17</Date>
+                <Version>1.8.2</Version>
+                <Comment>Version bump</Comment>
+                <Name>Richard de Bruin</Name>
+                <Email>richdb@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-04-04</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-icon-theme</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Mate icon theme</Summary>
+            <Summary xml:lang="tr">Mate simge teması</Summary>
+            <Description xml:lang="en">mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
+            <Description xml:lang="tr">mate-icon-theme paketi, Mate masaüstü tarafından kullanılan öntanımlı simge temasını içerir.</Description>
+            <Archive type="tarxz" sha1sum="0dbf797182147d5a6915714eb4b172f4e4dec28f">http://pub.mate-desktop.org/releases/1.10/mate-icon-theme-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>icon-naming-utils</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-icon-theme/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-icon-theme</Name>
+            <RuntimeDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>icon-naming-utils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/pkgconfig/mate-icon-theme.pc</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/icons/mate/16x16/places/start-here.png">16.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/mate/22x22/places/start-here.png">22.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/mate/24x24/places/start-here.png">24.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/mate/32x32/places/start-here.png">32.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/mate/48x48/places/start-here.png">48.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/menta/16x16/places/start-here.png">16.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/menta/22x22/places/start-here.png">22.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/menta/24x24/places/start-here.png">24.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/menta/32x32/places/start-here.png">32.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/menta/48x48/places/start-here.png">48.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/mate/scalable/places/start-here-symbolic.svg">scalable.svg</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="6">
+                <Date>2015-06-25</Date>
+                <Version>1.10.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-02-25</Date>
+                <Version>1.6.4</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-02</Date>
+                <Version>1.6.3</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-09-10</Date>
+                <Version>1.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-icon-theme-faenza</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3.0</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.mate.base</PartOf>
+            <Summary xml:lang="en">Faenza Icon theme for MATE Desktop</Summary>
+            <Description xml:lang="en">mate-icon-theme-faenza, Mate masaüstü için Faenza icon temasıdır.</Description>
+            <Description xml:lang="tr">Mate masaüstü için Faenza icon temasıdır.</Description>
+            <Icon>mate-icon-theme-faenza</Icon>
+            <Archive type="tarxz" sha1sum="155c6e3c5b6fd2d1b5dfcdb725598c0ba0121d9e">http://pub.mate-desktop.org/releases/1.10/mate-icon-theme-faenza-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>icon-naming-utils</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/mate-icon-theme-faenza/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-icon-theme-faenza</Name>
+            <RuntimeDependencies>
+                <Dependency>icon-naming-utils</Dependency>
+                <Dependency>mate-common</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/16/start-here-gnome.png">22.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/22/start-here-gnome.png">24.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/24/start-here-gnome.png">32.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/32/start-here-gnome.png">32.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/48/start-here-gnome.png">48.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/64/start-here-gnome.png">64.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/96/start-here-gnome.png">96.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenza/places/scalable/start-here-gnome.svg">scalable.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenzadark/places/22/start-here-mate.png">22.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenzadark/places/24/start-here-mate.png">24.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenzagray/places/22/start-here-mate.png">22.png</AdditionalFile>
+                <AdditionalFile target="/usr/share/icons/matefaenzagray/places/24/start-here-mate.png">24.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-02</Date>
+                <Version>1.6.0</Version>
+                <Comment>İcon fixed</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-18</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-screensaver</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Replaces xscreensaver, integrating with the MATE desktop.</Summary>
+            <Summary xml:lang="tr">Replaces xscreensaver, integrating with the MATE desktop.</Summary>
+            <Description xml:lang="en">mate-screensaver, Mate masaüstü için ekrankoruyucu uygulamasıdır.</Description>
+            <Icon>preferences-desktop-screensaver</Icon>
+            <Archive type="tarxz" sha1sum="2eaed3c2b6f92fb75be42a70c92402447920f693">http://pub.mate-desktop.org/releases/1.10/mate-screensaver-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>mate-menus-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libmatekbd-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+                <Dependency>libXxf86misc-devel</Dependency>
+                <Dependency>libXScrnSaver-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-screensaver/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-screensaver</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>mate-menus</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libmatekbd</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>libXxf86misc</Dependency>
+                <Dependency>libXScrnSaver</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/</Path>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="executable">/usr/libexec/</Path>
+                <Path fileType="data">/usr/share/backgrounds</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/mate-screensaver</Path>
+                <Path fileType="data">/usr/share/desktop-directories</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+                <Path fileType="data">/usr/share/mate-background-properties</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/pisi.svg" permission="0755">pisi.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/pixmaps/turkey.svg" permission="0755">turkey.svg</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/screensavers/pisilogo-floaters.desktop" permission="0755">pisilogo-floaters.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/screensavers/turkeylogo-floaters.desktop" permission="0755">turkeylogo-floaters.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libmatemixer</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3.0</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Mixer library for MATE Desktop</Summary>
+            <Description xml:lang="en">libmatemixer is a mixer library for MATE desktop.</Description>
+            <Icon>multimedia-volume-control</Icon>
+            <Archive type="tarxz" sha1sum="7acaf44336b2631f9a0ed39494f5cb10e0f65d5b">http://pub.mate-desktop.org/releases/1.10/libmatemixer-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mate-common</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/libmatemixer/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libmatemixer</Name>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libmatemixer-devel</Name>
+            <Summary xml:lang="en">Development for files libmatemixer</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">libmatemixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/lib/pkgconfig/</Path>
+                <Path fileType="header">/usr/include/mate-mixer</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libmatemixer-doc</Name>
+            <Summary xml:lang="en">libmatemixer-doc, Documentation files</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">libmatemixer</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>caja-extensions</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Mate file manager eklentileri</Summary>
+            <Summary xml:lang="tr">Caja eklentileri</Summary>
+            <Description xml:lang="en">caja-extensions, Mate file manager eklentileri.</Description>
+            <Description xml:lang="tr">caja-extensions, Caja eklentileri.</Description>
+            <Archive type="tarxz" sha1sum="8341331d11a95d399630dbc05b49edcff755d6ca">http://pub.mate-desktop.org/releases/1.10/caja-extensions-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>caja-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>gupnp-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/caja-extensions/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>caja-extensions</Name>
+            <RuntimeDependencies>
+                <Dependency>caja</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>gupnp</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/MateConf</Path>
+                <Path fileType="data">/usr/share/glib-2.0/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/caja-extensions</Path>
+                <Path fileType="data">/usr/share/caja/extensions/</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>caja-extensions-devel</Name>
+            <Summary xml:lang="en">Development files for caja-extensions</Summary>
+            <Summary xml:lang="tr">Development files for caja-extensions</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency release="3">caja-extensions</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>caja-extensions-doc</Name>
+            <Summary xml:lang="en">caja-extensions için belgeler</Summary>
+            <Summary xml:lang="tr">caja-extensions için belgeler</Summary>
+            <RuntimeDependencies>
+                <Dependency release="3">caja-extensions</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/gtk-doc/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-media</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">MATE media programs</Summary>
+            <Description xml:lang="en">This package contains a few media utilities for the MATE desktop, including a volume control.</Description>
+            <Icon>multimedia-volume-control</Icon>
+            <Archive type="tarxz" sha1sum="702b6aa48312eb58891b6cca887bd112e7f0b86c">http://pub.mate-desktop.org/releases/1.10/mate-media-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>gstreamer-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libunique3-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>libmatemixer-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>gst-plugins-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-media/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-media</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>libunique3</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>gst-plugins-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/sounds</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/mate-2.0</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/mate-media</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pluma</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Mate metin editörü</Summary>
+            <Description xml:lang="en">mate masaüstü için metin editörü.</Description>
+            <Icon>accessories-text-editor</Icon>
+            <Archive type="tarxz" sha1sum="ed62ff4ced843d09040720865bad9f15ce4c831d">http://pub.mate-desktop.org/releases/1.10/pluma-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>enchant-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>python-gtk-devel</Dependency>
+                <Dependency>gtksourceview-devel</Dependency>
+                <Dependency>python-gtksourceview-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="0">pluma-1.6.2-configuration.patch</Patch>
+            </Patches>
+            <SourceURI>extras/pluma/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pluma</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>enchant</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>gtksourceview3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/pluma</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="executable">/usr/libexec/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-text-editor</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-text-editor</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>pluma-devel</Name>
+            <Summary xml:lang="en">pluma için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtksourceview3-devel</Dependency>
+                <Dependency release="3">pluma</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include/pluma</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-text-editor-devel</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-text-editor-devel</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>pluma-gtk-doc</Name>
+            <Summary xml:lang="en">pluma-gtk-doc için dosyalar</Summary>
+            <RuntimeDependencies>
+                <Dependency release="3">pluma</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/gtk-doc/html/pluma/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.1</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-indicator-applet</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <License>LGPLv2+</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">A small applet to display information from various applications consistently in the panel.</Summary>
+            <Description xml:lang="en">A small applet to display information from various applications consistently in the panel. The indicator applet exposes Ayatana Indicators in the MATE Panel.</Description>
+            <Archive type="tarxz" sha1sum="36f16d01c30b37974dcd40cad1c6a2d66b3f9b42">http://pub.mate-desktop.org/releases/1.10/mate-indicator-applet-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>libindicator-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-indicator-applet/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-indicator-applet</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>libindicator</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-system-monitor</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Process and resource monitor</Summary>
+            <Description xml:lang="en">Process viewer and system resource monitor for MATE</Description>
+            <Icon>utilities-system-monitor</Icon>
+            <Archive type="tarxz" sha1sum="3f351d823de375d1e766d37f6152fd9451be2dda">http://pub.mate-desktop.org/releases/1.10/mate-system-monitor-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>atkmm-devel</Dependency>
+                <Dependency>gtkmm3-devel</Dependency>
+                <Dependency>glibmm-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>libgtop-devel</Dependency>
+                <Dependency>libwnck2-devel</Dependency>
+                <Dependency>libsigc++-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-system-monitor/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-system-monitor</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>glibmm</Dependency>
+                <Dependency>gtkmm</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>libwnck2</Dependency>
+                <Dependency>libsigc++</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+                <Path fileType="data">/usr/share/appdata/mate-system-monitor.appdata.xml</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pixmaps/mate-system-monitor/side.png" permission="0644" owner="root">side.png</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-power-manager</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Mate için güç yöneticisi</Summary>
+            <Summary xml:lang="tr">Mate için güç yöneticisi</Summary>
+            <Description xml:lang="en">Power management tool for the MATE desktop.</Description>
+            <Icon>mate-power-manager</Icon>
+            <Archive type="tarxz" sha1sum="7540735374e5892c26a9c06f9c973742ef873e74">http://pub.mate-desktop.org/releases/1.10/mate-power-manager-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libunique-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>libgnome-keyring-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-power-manager/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-power-manager</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="executable">/usr/sbin</Path>
+                <Path fileType="data">/usr/share/mate*</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.3</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.2</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>engrampa</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Engrampa is an archive manager for the MATE environment.</Summary>
+            <Description xml:lang="en">Engrampa is an archive manager for the MATE environment.  This means that you can create and modify archives; view the content of an archive; view and modify a file contained in the archive; extract files from the archive.</Description>
+            <Icon>engrampa</Icon>
+            <Archive type="tarxz" sha1sum="bca7140ac1715620fc2336ef6352df8a6f9d927b">http://pub.mate-desktop.org/releases/1.10/engrampa-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>caja-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>json-glib-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/engrampa/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>engrampa</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>caja</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>json-glib</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/dbus-1/</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/engrampa</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/caja/extensions/</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-file-archiver</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-file-archiver</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>eom</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Eye of MATE, an image viewer for MATE</Summary>
+            <Summary xml:lang="tr">Mate için resim görüntüleyicisi</Summary>
+            <Description xml:lang="en">This is the Eye of MATE, an image viewer program.  It is meant to be a fast and functional image viewer.</Description>
+            <Description xml:lang="tr">eom, resim görüntüleyicisidir.</Description>
+            <Icon>eom</Icon>
+            <Archive type="tarxz" sha1sum="640219ec2519eec407afb8500f31b816728c0aab">http://pub.mate-desktop.org/releases/1.10/eom-1.10.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>lcms2-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>exempi-devel</Dependency>
+                <Dependency>libexif-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+                <Dependency>libjpeg-turbo-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/eom/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>eom</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>exempi</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-desktop</Dependency>
+                <Dependency>libjpeg-turbo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/eom</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/gir-1.0/</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-image-viewer</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-image-viewer</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>eom-devel</Name>
+            <Summary xml:lang="en">Eye of MATE development files</Summary>
+            <Summary xml:lang="tr">eom için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency release="3">eom</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include/</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-image-viewer-devel</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-image-viewer-devel</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>eom-doc</Name>
+            <Summary xml:lang="en">Eye of MATE documentation files</Summary>
+            <Summary xml:lang="tr">eom için döküman belgeleri.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="3">eom</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-image-viewer-doc</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-image-viewer-doc</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-06-25</Date>
+                <Version>1.10.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>python-caja</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Python binding for Mate CAJA</Summary>
+            <Description xml:lang="en">These are unstable bindings for the caja extension library.</Description>
+            <Archive type="tarxz" sha1sum="6e9fa98bd3ee82106534dad3a464aebe436fa0a0">http://pub.mate-desktop.org/releases/1.10/python-caja-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mate-common</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>caja-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/python-caja/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>python-caja</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>caja</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>python</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale/</Path>
+                <Path fileType="data">/usr/share/caja/extensions/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-04</Date>
+                <Version>1.6.1</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-user-share</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">User level public file sharing via WebDAV or ObexFTP</Summary>
+            <Description xml:lang="en">mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
+            <Icon>mate-file-share-properties</Icon>
+            <Archive type="tarxz" sha1sum="2f6dd6a05e6c1894272b6a0d7348e709196bb947">http://pub.mate-desktop.org/releases/1.10/mate-user-share-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>caja-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>libunique-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-user-share/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-user-share</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>caja</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="config">/etc/xdg/autostart</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/mate-user-share</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+                <Path fileType="data">/usr/share/caja/extensions/libcaja-user-share.caja-extension</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-04</Date>
+                <Version>1.6.1</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>atril</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Atril is a document viewer for the MATE desktop</Summary>
+            <Description xml:lang="en">Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</Description>
+            <Icon>atril</Icon>
+            <Archive type="tarxz" sha1sum="7abd5b9310d88cb5da05248f1c55bb9ac069ac28">http://pub.mate-desktop.org/releases/1.10/atril-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>tiff-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>djvu-devel</Dependency>
+                <Dependency>caja-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>t1lib-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>libgxps-devel</Dependency>
+                <Dependency>libsecret-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libspectre-devel</Dependency>
+                <Dependency>texlive-bin-devel</Dependency>
+                <Dependency>poppler-glib-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/atril/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>atril</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>tiff</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>caja</Dependency>
+                <Dependency>djvu</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>t1lib</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libgxps</Dependency>
+                <Dependency>libsecret</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libspectre</Dependency>
+                <Dependency>poppler-glib</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="data">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/atril</Path>
+                <Path fileType="data">/usr/share/mate*</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="executable">/usr/libexec/</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="data">/usr/share/thumbnailers</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/caja/extensions/</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/atril.convert</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-document-viewer</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-document-viewer</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>atril-devel</Name>
+            <Summary xml:lang="en">Atril development files</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency release="3">atril</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="config">/usr/lib/pkgconfig</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-document-viewer-devel</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-document-viewer-devel</Package>
+            </Replaces>
+        </Package>
+        <Package>
+            <Name>atril-doc</Name>
+            <Summary xml:lang="en">Atril documentation files.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="3">atril</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-document-viewer-doc</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-document-viewer-doc</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-utils</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">MATE utility programs</Summary>
+            <Description xml:lang="en">The mate-utils package contains a set of small &quot;desk accessory&quot; utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
+            <Icon>system-search</Icon>
+            <Archive type="tarxz" sha1sum="ecb5a219816f8e41b7e98ea7ee505529fd4d7524">http://pub.mate-desktop.org/releases/1.10/mate-utils-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>libgtop-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-utils/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-utils</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/mate*</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-utils-devel</Name>
+            <Summary xml:lang="en">mate-utils için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">mate-utils için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency release="5">mate-utils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-utils-gtk-doc</Name>
+            <Summary xml:lang="en">mate-utils için dosyalar</Summary>
+            <RuntimeDependencies>
+                <Dependency release="5">mate-utils</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-04</Date>
+                <Version>1.6.1</Version>
+                <Comment>Release Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-netspeed</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Traffic monitor applet for MATE</Summary>
+            <Description xml:lang="en">This is a fork of GNOME netspeed applet.</Description>
+            <Archive type="tarxz" sha1sum="ce27b63cb2ee92bc24071f1df1f34a52069be5b6">http://pub.mate-desktop.org/releases/1.10/mate-netspeed-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libgtop-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-netspeed/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-netspeed</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mozo</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Mozo menu editor for MATE</Summary>
+            <Description xml:lang="en">Easy MATE menu editing tool.</Description>
+            <Icon>mozo</Icon>
+            <Archive type="tarxz" sha1sum="75f5a49a59833acbb911c7f20fe21ec4d39b9e45">http://pub.mate-desktop.org/releases/1.10/mozo-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>mate-panel-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mozo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mozo</Name>
+            <RuntimeDependencies>
+                <Dependency>mate-panel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man/</Path>
+                <Path fileType="data">/usr/share/mozo</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+            </Files>
+            <Conflicts>
+                <Package>mate-menu-editor</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>mate-menu-editor</Package>
+            </Replaces>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-netbook</Name>
+            <Homepage>http://mate-desktop.org/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Basit bir pencere yönetim aracı</Summary>
+            <Summary xml:lang="tr">Basit bir pencere yönetim aracı</Summary>
+            <Description xml:lang="en">A simple window management tool.</Description>
+            <Description xml:lang="tr">Basit bir pencere yönetim aracı uygulaması.</Description>
+            <Icon>mate-netbook</Icon>
+            <Archive type="tarxz" sha1sum="d4067ba7357f8a6f0e6874660c9850ae600ff1a8">http://pub.mate-desktop.org/releases/1.10/mate-netbook-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>libXtst-devel</Dependency>
+                <Dependency>libwnck2-devel</Dependency>
+                <Dependency>libunique-devel</Dependency>
+                <Dependency>libfakekey-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>perl-XML-Parser</Dependency>
+                <Dependency>mate-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-netbook/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-netbook</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libwnck2</Dependency>
+                <Dependency>libunique</Dependency>
+                <Dependency>libfakekey</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-panel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="excutable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man/</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/MateConf</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="config">/etc/xdg/autostart</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="excutable">/usr/lib/mate-netbook</Path>
+                <Path fileType="data">/usr/libexec/mate-window-picker-applet</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-08</Date>
+                <Version>1.8.0</Version>
+                <Comment>Rebuild.</Comment>
+                <Name>Alihan Öztürk</Name>
+                <Email>alihan@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-12-21</Date>
+                <Version>1.6.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-applets</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Applets for MATE panel.</Summary>
+            <Description xml:lang="en">Applets for the MATE Desktop and Panel</Description>
+            <Archive type="tarxz" sha1sum="953fcbb9865dbbfbb1a8ccfc85884b1f336b33b2">http://pub.mate-desktop.org/releases/1.10/mate-applets-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>yelp-tools</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>libgtop-devel</Dependency>
+                <Dependency>libwnck3-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>libmateweather-devel</Dependency>
+                <Dependency>NetworkManager-devel</Dependency>
+                <Dependency>gtksourceview3-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-applets/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-applets</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libgtop</Dependency>
+                <Dependency>libwnck3</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>gtksourceview</Dependency>
+                <Dependency>libmateweather</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/sound</Path>
+                <Path fileType="config">/etc/dbus-1</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/MateConf</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/mate-2.0</Path>
+                <Path fileType="executable">/usr/libexec/</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/mate-applets</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="6">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2014-06-10</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-03-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Rebuild</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-terminal</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">MATE terminal emulator application</Summary>
+            <Description xml:lang="en">mate-terminal, masaüstü için terminal uygulaması.</Description>
+            <Description xml:lang="tr">mate-terminal, masaüstü için terminal uygulaması.</Description>
+            <Icon>utilities-terminal</Icon>
+            <Archive type="tarxz" sha1sum="f6889ec01551083cbb58c099bd1e59fd897b96ab">http://pub.mate-desktop.org/releases/1.10/mate-terminal-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>vte3-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>dconf-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="0">mate-terminal-1.6.2-configuration.patch</Patch>
+            </Patches>
+            <SourceURI>extras/mate-terminal/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-terminal</Name>
+            <RuntimeDependencies>
+                <Dependency>vte3</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>dconf</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/omf</Path>
+                <Path fileType="data">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/mate-terminal</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.2</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.1</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>mate-sensors-applet</Name>
+            <Homepage>http://www.mate-desktop.org</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.mate.extras</PartOf>
+            <Summary xml:lang="en">Display readings from hardware sensors in your MATE panel.</Summary>
+            <Description xml:lang="en">MATE Sensors Applet is an applet for the MATE Panel to display readings from hardware sensors, including CPU temperature, fan speeds and voltage readings under Linux.on.</Description>
+            <Archive type="tarxz" sha1sum="ef88898390ca6ea0f6c2aa099bf0b9ef023b7562">http://pub.mate-desktop.org/releases/1.10/mate-sensors-applet-1.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency>mate-common</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>mate-panel-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>lm_sensors-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>extras/mate-sensors-applet/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>mate-sensors-applet</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>mate-panel</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>lm_sensors</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/mate</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="executable">/usr/libexec/</Path>
+                <Path fileType="data">/usr/share/mate-panel</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/mate-sensors-applet</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>mate-sensors-applet-devel</Name>
+            <Summary xml:lang="en">mate-sensors-applet için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">mate-sensors-applet için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="5">mate-sensors-applet</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-06-25</Date>
+                <Version>1.10.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-06-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-07</Date>
+                <Version>1.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-02-02</Date>
+                <Version>1.6.1</Version>
+                <Comment>Version bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>1.6.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+</PISI>
