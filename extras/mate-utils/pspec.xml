@@ -15,7 +15,7 @@
         <Description>The mate-utils package contains a set of small "desk accessory" utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
         <Archive sha1sum="ecb5a219816f8e41b7e98ea7ee505529fd4d7524" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-utils-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -26,14 +26,14 @@
             <Dependency>libcanberra-gtk</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-panel-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-utils</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
@@ -44,7 +44,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-panel</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

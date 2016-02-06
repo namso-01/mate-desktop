@@ -15,14 +15,14 @@
         <Description>Easy MATE menu editing tool.</Description>
         <Archive sha1sum="75f5a49a59833acbb911c7f20fe21ec4d39b9e45" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mozo-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>mate-panel-devel</Dependency>
+            <!--<Dependency>mate-panel-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mozo</Name>
         <RuntimeDependencies>
-            <Dependency>mate-panel</Dependency>
+            <!--<Dependency>mate-panel</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-menu-editor</Package>

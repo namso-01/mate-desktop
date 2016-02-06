@@ -15,20 +15,20 @@
         <Description>A small applet to display information from various applications consistently in the panel. The indicator applet exposes Ayatana Indicators in the MATE Panel..</Description>
         <Archive sha1sum="36f16d01c30b37974dcd40cad1c6a2d66b3f9b42" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-indicator-applet-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>mate-panel-devel</Dependency>
-            <Dependency>libindicator-devel</Dependency>
+            <Dependency>libindicator-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-indicator-applet</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>mate-panel</Dependency>
-            <Dependency>libindicator</Dependency>
+            <Dependency>libindicator</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

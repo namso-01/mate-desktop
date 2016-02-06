@@ -13,25 +13,25 @@
         <IsA>library</IsA>
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
-        <Archive sha1sum="d4e5b69dde4f57bbd01029bee2f414be98882897" type="tarxz">http://pub.mate-desktop.org/releases/1.10/libmatekbd-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="d4e5b69dde4f57bbd01029bee2f414be98882897" type="tarxz">http://pub.mate-desktop.org/releases/1.12/libmatekbd-1.12.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk3-devel</Dependency>
+            <!--<Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libxklavier-devel</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>desktop-file-utils</Dependency>-->
         </BuildDependencies>
     </Source>
     <Package>
         <Name>libmatekbd</Name>
         <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
+            <!--<Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libxklavier</Dependency>
+            <Dependency>libxklavier</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -49,9 +49,9 @@
         <Name>libmatekbd-devel</Name>
         <Summary>libmatekbd için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-             <Dependency>gtk3-devel</Dependency>
+             <!--<Dependency>gtk3-devel</Dependency>
              <Dependency>libxklavier-devel</Dependency>
-             <Dependency release="current">libmatekbd</Dependency>
+             <Dependency release="current">libmatekbd</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>

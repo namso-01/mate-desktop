@@ -17,7 +17,7 @@
         <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
         <Archive sha1sum="ec52966a5f47730c16a9a9c6c1b95b73d7afee84" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-desktop-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>itstool</Dependency>
+            <!--<Dependency>itstool</Dependency>
             <Dependency>gtk-doc</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -30,7 +30,7 @@
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>-->
         </BuildDependencies>
         <Patches>
             <!--<Patch level="0">mate-desktop-pisilinux-configuration.patch</Patch>-->
@@ -40,7 +40,7 @@
     <Package>
         <Name>mate-desktop</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>dconf</Dependency>
             <Dependency>cairo</Dependency>
@@ -50,7 +50,7 @@
             <Dependency>fontconfig</Dependency>            
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>startup-notification</Dependency>
-            <Dependency>network-manager-applet</Dependency> <!--no remove-->
+            <Dependency>network-manager-applet</Dependency>--> <!--no remove-->
         </RuntimeDependencies>
         <Replaces>
             <Package>libmatewnck</Package>
@@ -100,10 +100,10 @@
         <Name>mate-desktop-devel</Name>
         <summary>mate-desktop için geliştirme dosyaları</summary>
         <RuntimeDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>dconf-devel</Dependency> 
             <Dependency>startup-notification-devel</Dependency>
-            <Dependency release="current">mate-desktop</Dependency>
+            <Dependency release="current">mate-desktop</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -115,7 +115,7 @@
         <Name>mate-desktop-doc</Name>
         <Summary>mate-desktop için döküman belgeleri.</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">mate-desktop</Dependency>
+            <!--<Dependency release="current">mate-desktop</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/gtk-doc</Path>

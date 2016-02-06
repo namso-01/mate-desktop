@@ -15,7 +15,7 @@
         <Description>Process viewer and system resource monitor for MATE</Description>
         <Archive sha1sum="3f351d823de375d1e766d37f6152fd9451be2dda" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-system-monitor-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>atkmm-devel</Dependency>
             <Dependency>gtkmm3-devel</Dependency>
@@ -24,7 +24,7 @@
             <Dependency>libgtop-devel</Dependency>
             <Dependency>libwnck2-devel</Dependency>
             <Dependency>libsigc++-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 

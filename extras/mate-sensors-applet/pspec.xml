@@ -14,25 +14,25 @@
         <Description>MATE Sensors Applet is an applet for the MATE Panel to display readings from hardware sensors, including CPU temperature, fan speeds and voltage readings under Linux.on.</Description>
         <Archive sha1sum="ef88898390ca6ea0f6c2aa099bf0b9ef023b7562" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-sensors-applet-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>mate-panel-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>lm_sensors-devel</Dependency>
+            <Dependency>lm_sensors-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-sensors-applet</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <!--<Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>mate-panel</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>lm_sensors</Dependency>
+            <Dependency>lm_sensors</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

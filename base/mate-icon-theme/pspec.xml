@@ -15,16 +15,16 @@
         <Description>mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
         <Archive sha1sum="0dbf797182147d5a6915714eb4b172f4e4dec28f" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-icon-theme-1.10.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
+            <!--<Dependency>mate-common</Dependency>
+            <Dependency>icon-naming-utils</Dependency>-->
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-icon-theme</Name>
         <RuntimeDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
+            <!--<Dependency>mate-common</Dependency>
+            <Dependency>icon-naming-utils</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

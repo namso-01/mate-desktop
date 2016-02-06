@@ -14,19 +14,19 @@
         <Description>These are unstable bindings for the caja extension library.</Description>
         <Archive sha1sum="6e9fa98bd3ee82106534dad3a464aebe436fa0a0" type="tarxz">http://pub.mate-desktop.org/releases/1.10/python-caja-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>mate-common</Dependency>
+            <!--<Dependency>mate-common</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>caja-devel</Dependency>
+            <Dependency>caja-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>python-caja</Name>
         <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
+            <!--<Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>glib2</Dependency>
-            <Dependency>python</Dependency>
+            <Dependency>python</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

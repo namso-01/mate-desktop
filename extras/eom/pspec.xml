@@ -15,7 +15,7 @@
         <Description>This is the Eye of MATE, an image viewer program.  It is meant to be a fast and functional image viewer.</Description>
         <Archive sha1sum="640219ec2519eec407afb8500f31b816728c0aab" type="tarxz">http://pub.mate-desktop.org/releases/1.10/eom-1.10.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>lcms2-devel</Dependency>
             <Dependency>mate-common</Dependency>
@@ -25,14 +25,14 @@
             <Dependency>librsvg-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
-            <Dependency>libjpeg-turbo-devel</Dependency>
+            <Dependency>libjpeg-turbo-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>eom</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>lcms2</Dependency>
             <Dependency>cairo</Dependency>
@@ -41,7 +41,7 @@
             <Dependency>librsvg</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-desktop</Dependency>
-            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-image-viewer</Package>
@@ -72,7 +72,7 @@
         <Name>eom-devel</Name>
         <Summary>Eye of MATE development files</Summary>
         <RuntimeDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>-->
             <Dependency release="current">eom</Dependency>
         </RuntimeDependencies>
         <Replaces>

@@ -14,7 +14,7 @@
         <Description>gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
         <Archive sha1sum="ca2895f20c660f178317ef5e1b480bfddf9c34fc" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-settings-daemon-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>nss-devel</Dependency>
+            <!--<Dependency>nss-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>dconf-devel</Dependency>
             <Dependency>mate-common</Dependency>
@@ -28,14 +28,14 @@
             <Dependency>libxklavier-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>libXxf86misc-devel</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>-->
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-settings-daemon</Name>
         <RuntimeDependencies>
-            <Dependency>nss</Dependency>
+            <!--<Dependency>nss</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>dconf</Dependency>
             <Dependency>cairo</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>libxklavier</Dependency>
             <Dependency>mate-desktop</Dependency>
             <Dependency>libXxf86misc</Dependency>
-            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>gst-plugins-base</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

@@ -15,7 +15,7 @@
         <Description>Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</Description>
         <Archive sha1sum="7abd5b9310d88cb5da05248f1c55bb9ac069ac28" type="tarxz">http://pub.mate-desktop.org/releases/1.10/atril-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>djvu-devel</Dependency>
@@ -31,14 +31,14 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libspectre-devel</Dependency>
             <Dependency>texlive-bin-devel</Dependency>
-            <Dependency>poppler-glib-devel</Dependency>
+            <Dependency>poppler-glib-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>atril</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>tiff</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
@@ -52,7 +52,7 @@
             <Dependency>libsecret</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libspectre</Dependency>
-            <Dependency>poppler-glib</Dependency>
+            <Dependency>poppler-glib</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-document-viewer</Package>
@@ -87,7 +87,7 @@
         <Name>atril-devel</Name>
         <Summary>Atril development files</Summary>
         <RuntimeDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>-->
             <Dependency release="current">atril</Dependency>
         </RuntimeDependencies>
         <Replaces>

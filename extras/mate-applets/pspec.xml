@@ -14,7 +14,7 @@
         <Description>Applets for the MATE Desktop and Panel</Description>
         <Archive sha1sum="953fcbb9865dbbfbb1a8ccfc85884b1f336b33b2" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-applets-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>yelp-tools</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -27,14 +27,14 @@
             <Dependency>mate-panel-devel</Dependency>
             <Dependency>libmateweather-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
-            <Dependency>gtksourceview3-devel</Dependency>
+            <Dependency>gtksourceview3-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-applets</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>dconf</Dependency>
@@ -45,7 +45,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-panel</Dependency>
             <Dependency>gtksourceview</Dependency>
-            <Dependency>libmateweather</Dependency>
+            <Dependency>libmateweather</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

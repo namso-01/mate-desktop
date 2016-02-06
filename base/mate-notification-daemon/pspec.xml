@@ -15,7 +15,7 @@
         <Description>mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
         <Archive sha1sum="44407390f6216fcea5e02615d8e2b57b2502f358" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-notification-daemon-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>mate-common</Dependency>
@@ -24,20 +24,20 @@
             <Dependency>libcanberra-gtk</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>            
+            <Dependency>mate-desktop-devel</Dependency>-->            
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-notification-daemon</Name>
          <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libwnck2</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

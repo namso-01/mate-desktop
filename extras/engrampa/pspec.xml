@@ -15,23 +15,23 @@
         <Description>Engrampa is an archive manager for the MATE environment.  This means that you can create and modify archives; view the content of an archive; view and modify a file contained in the archive; extract files from the archive.</Description>
         <Archive sha1sum="bca7140ac1715620fc2336ef6352df8a6f9d927b" type="tarxz">http://pub.mate-desktop.org/releases/1.10/engrampa-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk3-devel</Dependency>
+            <!--<Dependency>gtk3-devel</Dependency>
             <Dependency>caja-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>json-glib-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>engrampa</Name>
         <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
+            <!--<Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>json-glib</Dependency>
+            <Dependency>json-glib</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-file-archiver</Package>

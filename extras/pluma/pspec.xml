@@ -15,7 +15,7 @@
         <Description>mate masaüstü için metin editörü.</Description>
         <Archive sha1sum="ed62ff4ced843d09040720865bad9f15ce4c831d" type="tarxz">http://pub.mate-desktop.org/releases/1.10/pluma-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -26,7 +26,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>gtksourceview-devel</Dependency>
-            <Dependency>python-gtksourceview-devel</Dependency>
+            <Dependency>python-gtksourceview-devel</Dependency>-->
         </BuildDependencies>
         <Patches>
             <Patch level="0">pluma-1.6.2-configuration.patch</Patch>
@@ -36,7 +36,7 @@
     <Package>
         <Name>pluma</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>glib2</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>libxml2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-desktop</Dependency>
-            <Dependency>gtksourceview3</Dependency>
+            <Dependency>gtksourceview3</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-text-editor</Package>
@@ -78,7 +78,7 @@
         <Name>pluma-devel</Name>
         <Summary>pluma için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-            <Dependency>gtksourceview3-devel</Dependency>
+            <!--<Dependency>gtksourceview3-devel</Dependency>-->
             <Dependency release="current">pluma</Dependency>
         </RuntimeDependencies>
         <Files>

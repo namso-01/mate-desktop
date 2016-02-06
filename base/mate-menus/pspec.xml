@@ -14,8 +14,8 @@
         <Description>mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>
         <Archive sha1sum="04662fc22aec5c37755029b8f8d8c56390c49807" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-menus-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>intltool</Dependency>
-            <Dependency>mate-common</Dependency>
+            <!--<Dependency>intltool</Dependency>
+            <Dependency>mate-common</Dependency>-->
         </BuildDependencies>
     </Source>
 
@@ -36,7 +36,7 @@
         <Name>mate-menus-devel</Name>
         <Summary>mate-menus için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">mate-menus</Dependency>
+            <!--<Dependency release="current">mate-menus</Dependency>-->
          </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

@@ -15,7 +15,7 @@
         <Description>Basit bir pencere yönetim aracı uygulaması.</Description>
         <Archive sha1sum="d4067ba7357f8a6f0e6874660c9850ae600ff1a8" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-netbook-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -27,14 +27,14 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-panel-devel</Dependency>
             <Dependency>perl-XML-Parser</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>mate-desktop-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-netbook</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
@@ -42,7 +42,7 @@
             <Dependency>libunique</Dependency>
             <Dependency>libfakekey</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>mate-panel</Dependency>
+            <Dependency>mate-panel</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="excutable">/usr/bin</Path>

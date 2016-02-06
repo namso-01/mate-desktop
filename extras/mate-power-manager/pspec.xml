@@ -15,7 +15,7 @@
         <Description>Power management tool for the MATE desktop.</Description>
         <Archive sha1sum="7540735374e5892c26a9c06f9c973742ef873e74" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-power-manager-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>mate-common</Dependency>
@@ -28,14 +28,14 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-panel-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
-            <Dependency>libgnome-keyring-devel</Dependency>
+            <Dependency>libgnome-keyring-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-power-manager</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <!--<Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>upower</Dependency>
@@ -47,7 +47,7 @@
             <Dependency>mate-panel</Dependency>
             <Dependency>libcanberra</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>libgnome-keyring</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

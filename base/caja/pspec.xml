@@ -17,7 +17,7 @@
         <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
         <Archive sha1sum="559db3d17ea3dacccfba55b085be148687be94b1" type="tarxz">http://pub.mate-desktop.org/releases/1.10/caja-1.10.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -30,14 +30,14 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>mate-desktop-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>caja</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>libunique</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>mate-desktop</Dependency>
+            <Dependency>mate-desktop</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-file-manager</Package>
@@ -90,8 +90,8 @@
         <Name>caja-devel</Name>
         <Summary>caja için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency release="current">caja</Dependency>
+            <!--<Dependency>gtk3-devel</Dependency>
+            <Dependency release="current">caja</Dependency>-->
          </RuntimeDependencies>
         <Replaces>
             <Package>mate-file-manager-devel</Package>

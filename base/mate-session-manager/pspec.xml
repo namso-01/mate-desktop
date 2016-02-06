@@ -15,7 +15,7 @@
         <Description>This package contains a session that can be started from a display manager such as MDM. It will load all necessary applications for a full-featured user session.</Description>
         <Archive sha1sum="e3b3a2a37d8b56c12a48c33522c198b24d90314d" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-session-manager-1.10.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk3-devel</Dependency>
+            <!--<Dependency>gtk3-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>libICE-devel</Dependency>
@@ -27,7 +27,7 @@
             <Dependency>mate-polkit-devel</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>mate-control-center-devel</Dependency>
-            <Dependency>mate-settings-daemon-devel</Dependency>            
+            <Dependency>mate-settings-daemon-devel</Dependency>-->            
         </BuildDependencies>
     </Source>
 

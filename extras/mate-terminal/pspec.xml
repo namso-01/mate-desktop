@@ -15,7 +15,7 @@
         <Description>mate-terminal, masaüstü için terminal uygulaması.</Description>
         <Archive sha1sum="f6889ec01551083cbb58c099bd1e59fd897b96ab" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-terminal-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>vte3-devel</Dependency>
+            <!--<Dependency>vte3-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -23,7 +23,7 @@
             <Dependency>libSM-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>libICE-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>-->
         </BuildDependencies>
         <Patches>
             <Patch level="0">mate-terminal-1.6.2-configuration.patch</Patch>
@@ -33,14 +33,14 @@
     <Package>
         <Name>mate-terminal</Name>
         <RuntimeDependencies>
-            <Dependency>vte3</Dependency>
+            <!--<Dependency>vte3</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>dconf</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

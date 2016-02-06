@@ -14,23 +14,23 @@
         <Description>This is a fork of GNOME netspeed applet.</Description>
         <Archive sha1sum="ce27b63cb2ee92bc24071f1df1f34a52069be5b6" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-netspeed-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>libgtop-devel</Dependency>
             <Dependency>mate-panel-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-netspeed</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <!--<Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libgtop</Dependency>
             <Dependency>mate-panel</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

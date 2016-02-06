@@ -15,7 +15,7 @@
         <Description>mate-screensaver, Mate masaüstü için ekrankoruyucu uygulamasıdır.</Description>
         <Archive sha1sum="2eaed3c2b6f92fb75be42a70c92402447920f693" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-screensaver-1.10.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -28,14 +28,14 @@
             <Dependency>libxklavier-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>libXxf86misc-devel</Dependency>
-            <Dependency>libXScrnSaver-devel</Dependency>
+            <Dependency>libXScrnSaver-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-screensaver</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <!--<Dependency>gtk2</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>libxklavier</Dependency>
             <Dependency>mate-desktop</Dependency>
             <Dependency>libXxf86misc</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
+            <Dependency>libXScrnSaver</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/</Path>

@@ -12,9 +12,9 @@
         <IsA>data</IsA>
         <Summary>Default wallpapers for the Mate desktop</Summary>
         <Description>gnome-backgrounds contains default wallpapers for the Mate desktop.</Description>
-	<Archive sha1sum="53d2c57982f3fb4c1c1f791eaa4cf3dc8d78bc0a" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-backgrounds-1.10.0.tar.xz</Archive>
-	    <BuildDependencies>
-             <Dependency>mate-common</Dependency>
+        <Archive sha1sum="53d2c57982f3fb4c1c1f791eaa4cf3dc8d78bc0a" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-backgrounds-1.10.0.tar.xz</Archive>
+        <BuildDependencies>
+             <!--<Dependency>mate-common</Dependency>-->
         </BuildDependencies>
         <Patches>
             <Patch level="1">mate-backgrounds-1.6.1-add-image.patch</Patch>

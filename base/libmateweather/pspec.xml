@@ -15,20 +15,20 @@
         <Description>libmateweather is a collection of documentation utilities for the Mate project.</Description>
         <Archive sha1sum="938c0063bf622c729b9ab33ea05cf37ea012be5e" type="tarxz">http://pub.mate-desktop.org/releases/1.10/libmateweather-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <!--<Dependency>gtk2-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>libsoup-gnome</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libmateweather</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <!--<Dependency>gtk2</Dependency>
             <Dependency>libsoup</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

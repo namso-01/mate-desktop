@@ -16,25 +16,25 @@
         <Description>mate-polkit package provides an authentication agent for polkit that integrates well with the Mate desktop environment.</Description>
         <Archive sha1sum="8e8e641a1e6867a5543b5cf25505db0f5c9a4663" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-polkit-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
+            <!--<Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>-->
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-polkit</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

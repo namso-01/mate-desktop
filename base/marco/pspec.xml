@@ -14,7 +14,7 @@
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
         <Archive sha1sum="aada9e6e34d9aa86771021ffca14d4f1482f2310" type="tarxz">http://pub.mate-desktop.org/releases/1.10/marco-1.10.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>zenity</Dependency>
+            <!--<Dependency>zenity</Dependency>
             <Dependency>itstool</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -38,7 +38,7 @@
             <Dependency>libXinerama-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
-            <Dependency versionFrom="1.10.0">mate-desktop-devel</Dependency>
+            <Dependency versionFrom="1.10.0">mate-desktop-devel</Dependency>-->
         </BuildDependencies>        
         <!--<AdditionalFiles>
             <AdditionalFile target="src/window.png">window.png</AdditionalFile>
@@ -56,7 +56,7 @@
     <Package>
         <Name>marco</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
+            <!--<Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libSM</Dependency>
@@ -75,7 +75,7 @@
             <Dependency>libXinerama</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>startup-notification</Dependency>
+            <Dependency>startup-notification</Dependency>-->
         </RuntimeDependencies>
         <Replaces>
             <Package>mate-window-manager</Package>

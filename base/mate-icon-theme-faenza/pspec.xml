@@ -15,16 +15,16 @@
         <Description>mate-icon-theme-faenza, Mate masaüstü için Faenza icon temasıdır.</Description>
         <Archive sha1sum="155c6e3c5b6fd2d1b5dfcdb725598c0ba0121d9e" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-icon-theme-faenza-1.10.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
+            <!--<Dependency>mate-common</Dependency>
+            <Dependency>icon-naming-utils</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-icon-theme-faenza</Name>
         <RuntimeDependencies>
-            <Dependency>icon-naming-utils</Dependency>
-            <Dependency>mate-common</Dependency>
+            <!--<Dependency>icon-naming-utils</Dependency>
+            <Dependency>mate-common</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
