@@ -1,38 +1,38 @@
-0cdb45a75bb7449f4339cd9d2f348d41168093b6	atril-1.20.0.tar.xz							+ 20  dvi + epub desteği yok
-71b838b2723656ebabd08ab251c9318c2cb27778	caja-1.20.0.tar.xz							+ 11
-10f85879fa2a589f1991ef48b786248d110855a4	caja-dropbox-1.20.0.tar.xz					+ 23
-247cf6a6213faba3d4deda4124ebffaa2989848a	caja-extensions-1.20.0.tar.xz				+ 18
-1aee58172605abe459df4b32900ed8ee122fb01e	engrampa-1.20.0.tar.xz						+ 21
-ea2cfa16231fe02d5f39e8386e78210de009109a	eom-1.20.0.tar.xz							+ 22 sandbox hatası geçilmiyor
-c3b08604efb5a915a77e778722686282941998ee	libmatekbd-1.20.0.tar.xz					+ 3
-96021a3240264bdf0949658d88e07bcdc5d99fb1	libmatemixer-1.20.0.tar.xz					+ 12
-60dfc96ff6cdb7e94e14f38731a444d447a162e2	libmateweather-1.20.0.tar.xz				+ 4
-219ff9e3d3a4062392098f0580bdf2e42e90c71d	marco-1.20.0.tar.xz							+ 14
-b44c170770bdc3a97f96a8db806cf814eabdcb10	mate-applets-1.20.0.tar.xz                  + 29 gucharmap derlenmeli - libmateweatheri görmeli + forune-mod derlenmeli
-55b7a0b409aa1adc40b8f37c2649afc2897e9336	mate-backgrounds-1.20.0.tar.xz				+ 2
-6e1583aacf129660278bdff8324e88a464481950	mate-calc-1.20.0.tar.xz                     + 24
-5e092883770b53cf6996bbc26db791ca112d0356	mate-common-1.20.0.tar.xz					+ 1
-06b33f544ea805ea23df30df4a819f50e1f4fbf7	mate-control-center-1.20.0.tar.xz			+ 17
-54cfd951ee5236d90828945cbc64380945b35eb5	mate-desktop-1.20.0.tar.xz					+ 7
-4b04f3acc6106876f646fd42cfb5b339dd969bb9	mate-icon-theme-1.20.0.tar.xz				+ 5
-08f32e19012bc7501ac445b1a6e13f7cba0a113a	mate-icon-theme-faenza-1.20.0.tar.xz		+ 6
-dd68ae59a38de4bf4eb98644000ab027cdee6991	mate-indicator-applet-1.20.0.tar.xz         + 25
-d854f83d91838342b6414f9c44e2a7082b655270	mate-media-1.20.0.tar.xz                    + 26
-2195b5ee4be6c561426067e1d742c349d4c503ea	mate-menus-1.20.0.tar.xz					+ 9
-2dd782925dbea0d3d0a5c0d24c1c807759c7a829	mate-netbook-1.20.0.tar.xz                  + 30
-784d13c1b3d56e412763ed1f2dcc5801659ec434	mate-notification-daemon-1.20.0.tar.xz		+ 10
-0d58064f0ab334cfb2efcce1033b7d95dda36c0a	mate-panel-1.20.0.tar.xz					+ 16
-0cf9debfb42d547966e09175d5abe3cb01ddb5f3	mate-polkit-1.20.0.tar.xz					+ 8
-6fd372f376eebe3631d57a8b2baf4dd22d8dab49	mate-power-manager-1.20.0.tar.xz            + 31
-e92303ccfa7bfc6b9f62390852d65b8b0318cab7	mate-screensaver-1.20.0.tar.xz              
-b509ab0568d5c511df38f539717ed432da167ce8	mate-sensors-applet-1.20.1.tar.xz           + 32
-198ef02c1ed6fe59960a86091da3304f51b94e16	mate-session-manager-1.20.0.tar.xz			+ 15
-0097568f6aab023a890be93dce275f4e62d96836	mate-settings-daemon-1.20.0.tar.xz			+ 13
-9eb2d1b5914faf410e643fe1aa01835f164b8711	mate-system-monitor-1.20.0.tar.xz           + 33
-1217072acd69b949cb559d0886a70ce178d06e57	mate-terminal-1.20.0.tar.xz                 + 27
-31e43207d7173653a39941994ede98db2265c093	mate-user-guide-1.20.0.tar.xz               + 37
-78a43cabfaf595658e5e71f80881ccb36140bf29	mate-user-share-1.20.0.tar.xz               + 34 mod_dnssd paketlenecek
-aa33647250ff6eff22ccb2e885fcd455e936d57a	mate-utils-1.20.0.tar.xz                    + 35
-bd03a195abd0641e15437160ffecf6a6a42b0420	mozo-1.20.0.tar.xz                          + 36
-e768e4e8e2a07214e96ee8265bbfe343e0b4ca5f	pluma-1.20.0.tar.xz                         + 28  --ignore-sandbox ile derlendi. enchant desteği kapalı
-ffc3d0e6337fc5883d6828ed8e69fab270e72e24	python-caja-1.20.0.tar.xz					+ 19
+atril-1.20.0.tar.xz							+ 20  dvi + epub desteği yok
+caja-1.20.0.tar.xz							+ 11
+caja-dropbox-1.20.0.tar.xz					+ 23
+aja-extensions-1.20.0.tar.xz				+ 18
+engrampa-1.20.0.tar.xz						+ 21
+eom-1.20.0.tar.xz							+ 22 sandbox hatası geçilmiyor
+libmatekbd-1.20.0.tar.xz					+ 3
+libmatemixer-1.20.0.tar.xz					+ 12
+libmateweather-1.20.0.tar.xz				+ 4
+marco-1.20.0.tar.xz							+ 14
+mate-applets-1.20.0.tar.xz                  + 29 gucharmap derlenmeli - libmateweatheri görmeli + forune-mod derlenmeli
+mate-backgrounds-1.20.0.tar.xz				+ 2
+mate-calc-1.20.0.tar.xz                     + 24
+mate-common-1.20.0.tar.xz					+ 1
+mate-control-center-1.20.0.tar.xz			+ 17
+mate-desktop-1.20.0.tar.xz					+ 7
+mate-icon-theme-1.20.0.tar.xz				+ 5
+mate-icon-theme-faenza-1.20.0.tar.xz		+ 6
+mate-indicator-applet-1.20.0.tar.xz         + 25
+mate-media-1.20.0.tar.xz                    + 26
+mate-menus-1.20.0.tar.xz					+ 9
+mate-netbook-1.20.0.tar.xz                  + 30
+mate-notification-daemon-1.20.0.tar.xz		+ 10
+mate-panel-1.20.0.tar.xz					+ 16
+mate-polkit-1.20.0.tar.xz					+ 8
+mate-power-manager-1.20.0.tar.xz            + 31
+mate-screensaver-1.20.0.tar.xz              
+mate-sensors-applet-1.20.1.tar.xz           + 32
+mate-session-manager-1.20.0.tar.xz			+ 15
+mate-settings-daemon-1.20.0.tar.xz			+ 13
+mate-system-monitor-1.20.0.tar.xz           + 33
+mate-terminal-1.20.0.tar.xz                 + 27
+mate-user-guide-1.20.0.tar.xz               + 37
+mate-user-share-1.20.0.tar.xz               + 34 mod_dnssd paketlenecek
+mate-utils-1.20.0.tar.xz                    + 35
+mozo-1.20.0.tar.xz                          + 36
+pluma-1.20.0.tar.xz                         + 28  --ignore-sandbox ile derlendi. enchant desteği kapalı
+python-caja-1.20.0.tar.xz					+ 19
