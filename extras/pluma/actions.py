@@ -11,9 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-gtk-doc=no \
-                         --disable-python")
+    autotools.configure(" --disable-static --disable-ispell --disable-spell --with-myspell-dir=/usr/share/myspell --enable-gtk-doc")
       
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")

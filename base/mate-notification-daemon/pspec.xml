@@ -13,31 +13,30 @@
         <IsA>app:gui</IsA>
         <Summary>Mate notification daemon</Summary>
         <Description>mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
-        <Archive sha1sum="44407390f6216fcea5e02615d8e2b57b2502f358" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-notification-daemon-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="784d13c1b3d56e412763ed1f2dcc5801659ec434" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-notification-daemon-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>atk-devel</Dependency>
+            <Dependency>intltool</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>libwnck2-devel</Dependency>
+            <Dependency>libwnck3-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>-->            
+            <Dependency>libcanberra-gtk-devel</Dependency>
+            <Dependency>libcanberra-gtk3-devel</Dependency>       
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-notification-daemon</Name>
          <RuntimeDependencies>
-            <!--<Dependency>atk</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>libwnck2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libwnck3</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>-->
+            <Dependency>libcanberra-gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -55,44 +54,9 @@
     </Package>
 
     <History>
-        <Update release="6">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-02-03</Date>
-            <Version>1.6.1</Version>
-            <Comment>Rebuild</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-11-13</Date>
-            <Version>1.6.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Richard de Bruin</Name>
-            <Email>richdb@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-10-18</Date>
-            <Version>1.6.0</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

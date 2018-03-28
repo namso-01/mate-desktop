@@ -10,9 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.dosed("data/org.mate.peripherals-touchpad.gschema.xml.in.in", "<default>false</default>", "<default>true</default>")
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-polkit \
+    #pisitools.dosed("data/org.mate.peripherals-touchpad.gschema.xml.in.in", "<default>false</default>", "<default>true</default>")
+    autotools.configure("--enable-polkit \
                          --disable-static")
     
     # for fix unused dependency

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>caja-dropbox</Name>
+        <Summary xml:lang="tr">caja-dropbox</Summary>
+        <Description xml:lang="tr">caja-extensions, Caja eklentileri.</Description>
+    </Source>
+</PISI>

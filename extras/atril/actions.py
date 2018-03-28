@@ -15,22 +15,15 @@ def setup():
                          --sysconfdir=/etc \
                          --localstatedir=/var \
                          --disable-static \
-                         --disable-rpath \
                          --enable-caja \
                          --enable-pdf \
                          --enable-tiff \
                          --enable-djvu \
                          --enable-dvi \
-                         --enable-xps \
-                         --enable-t1lib \
+                         --enable-xps --enable-introspection \
+                         --enable-t1lib --enable-gtk-doc \
                          --enable-comics \
-                         --enable-pixbuf \
-                         --enable-impress \
-                         --with-gtk=3.0 \
-                         --disable-scrollkeeper \
-                         --disable-introspection \
-                         --disable-schemas-compile \
-                         --disable-schemas-install")
+                         --enable-pixbuf ")
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")

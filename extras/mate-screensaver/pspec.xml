@@ -13,22 +13,25 @@
         <IsA>app:gui</IsA>
         <Summary>Replaces xscreensaver, integrating with the MATE desktop.</Summary>
         <Description>mate-screensaver, Mate masaüstü için ekrankoruyucu uygulamasıdır.</Description>
-        <Archive sha1sum="2eaed3c2b6f92fb75be42a70c92402447920f693" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-screensaver-1.10.1.tar.xz</Archive>
+        <Archive sha1sum="e92303ccfa7bfc6b9f62390852d65b8b0318cab7" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-screensaver-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>gtk2-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>pam-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
-            <Dependency>mate-menus-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
+            <Dependency>ConsoleKit-devel</Dependency>
             <Dependency>libmatekbd-devel</Dependency>
+            <Dependency>mate-menus-devel</Dependency>
             <Dependency>libXxf86vm-devel</Dependency>
-            <Dependency>libxklavier-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>libXxf86misc-devel</Dependency>
-            <Dependency>libXScrnSaver-devel</Dependency>-->
+            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>libXScrnSaver-devel</Dependency>
+            <Dependency>mate-session-manager</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -77,30 +80,9 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2015-06-25</Date>
-            <Version>1.10.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-10-20</Date>
-            <Version>1.6.1</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

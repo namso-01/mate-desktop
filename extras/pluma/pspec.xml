@@ -13,49 +13,39 @@
         <IsA>app:gui</IsA>
         <Summary>Mate metin editörü</Summary>
         <Description>mate masaüstü için metin editörü.</Description>
-        <Archive sha1sum="ed62ff4ced843d09040720865bad9f15ce4c831d" type="tarxz">http://pub.mate-desktop.org/releases/1.10/pluma-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="e768e4e8e2a07214e96ee8265bbfe343e0b4ca5f" type="tarxz">http://pub.mate-desktop.org/releases/1.20/pluma-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>atk-devel</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>python-six</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>libICE-devel</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>libxslt-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>libpeas-devel</Dependency>
             <Dependency>enchant-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>python-gtk-devel</Dependency>
-            <Dependency>gtksourceview-devel</Dependency>
-            <Dependency>python-gtksourceview-devel</Dependency>-->
+            <Dependency>gtksourceview3-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="0">pluma-1.6.2-configuration.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
         <Name>pluma</Name>
         <RuntimeDependencies>
-            <!--<Dependency>atk</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>glib2</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency>enchant</Dependency>
-            <Dependency>libxml2</Dependency>
+            <Dependency>libpeas</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>mate-desktop</Dependency>
-            <Dependency>gtksourceview3</Dependency>-->
+            <Dependency>gtksourceview3</Dependency>
+            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>mate-text-editor</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-text-editor</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -65,6 +55,7 @@
             <Path fileType="data">/usr/share/help</Path>
             <Path fileType="data">/usr/share/mate</Path>
             <Path fileType="data">/usr/share/pluma</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/appdata/</Path>
             <Path fileType="executable">/usr/libexec/</Path>
@@ -78,19 +69,14 @@
         <Name>pluma-devel</Name>
         <Summary>pluma için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-            <!--<Dependency>gtksourceview3-devel</Dependency>-->
+            <Dependency>libpeas-devel</Dependency>
+            <Dependency>gtksourceview3-devel</Dependency>
             <Dependency release="current">pluma</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/pluma</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
-        <Replaces>
-            <Package>mate-text-editor-devel</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-text-editor-devel</Package>
-        </Conflicts>
     </Package>
 
     <Package>
@@ -105,23 +91,9 @@
     </Package>
     
     <History>
-        <Update release="3">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-06-07</Date>
-            <Version>1.8.1</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
+            <Date>2015-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>gucharmap</Name>
+        <Summary xml:lang="en">Gnome Unicode Charmap</Summary>
+        <Description xml:lang="en">gucharmap,gucharmap is the GNOME Character Map, based on the Unicode Character Database.</Description>
+    </Source>
+
+    <Package>
+        <Name>gucharmap-docs</Name>
+        <Summary xml:lang="tr">gucharmap başvuru belgeleri</Summary>
+    </Package>
+
+    <Package>
+        <Name>gucharmap-devel</Name>
+        <Summary xml:lang="tr">gucharmap için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>

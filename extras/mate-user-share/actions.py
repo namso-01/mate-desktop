@@ -11,9 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static \
-                         --disable-bluetooth\
-                         --with-gtk=3.0")
+    autotools.configure("--disable-static")
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")

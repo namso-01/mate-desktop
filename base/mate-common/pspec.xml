@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Common files for development of Mate packages</Summary>
         <Description>maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>	
-        <Archive sha1sum="ea188e6f481e007e6718990e222de05dfb33e392" type="tarxz">http://pub.mate-desktop.org/releases/1.12/mate-common-1.12.0.tar.xz</Archive>
+        <Archive sha1sum="5e092883770b53cf6996bbc26db791ca112d0356" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-common-1.20.0.tar.xz</Archive>
     </Source>
     <Package>
         <Name>mate-common</Name>
@@ -26,37 +26,9 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2016-02-28</Date>
-            <Version>1.12.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-09-10</Date>
-            <Version>1.6.2</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

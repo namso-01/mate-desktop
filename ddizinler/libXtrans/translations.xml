@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>libXtrans</Name>
+        <Summary xml:lang="en">X Network Transport layer shared code</Summary>
+    </Source>
+
+    <Package>
+        <Name>libXtrans-devel</Name>
+        <Summary xml:lang="tr">libXtrans için geliştirme dosyaları</Summary>
+        <Summary xml:lang="en">Development files for libXtrans</Summary>
+    </Package>
+</PISI>

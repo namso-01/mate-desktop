@@ -1,0 +1,65 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libXpresent</Name>
+        <Homepage>https://cgit.freedesktop.org/xorg/lib/libXpresent/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>MIT</License>
+        <IsA>library</IsA>
+        <Summary>X.Org libXpresent library</Summary>
+        <Description>LibXxf86vm is the client library for the XFree86-VidMode X extension.</Description>
+        <Archive sha1sum="9144f73ab0ed8f8f0ee3fe722c9217e3ec8f71b9" type="targz">https://sourceforge.net/projects/pisilinux/files/source/libXpresent-1.0.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>util-macros</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libXpresent</Name>
+        <RuntimeDependencies>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libXpresent-devel</Name>
+        <Summary>Development files for libXpresent</Summary>
+        <RuntimeDependencies>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency release="current">libXpresent</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/X11</Path>
+            <Path fileType="header">/usr/lib/pkgconfig/</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>1.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

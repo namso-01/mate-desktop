@@ -12,8 +12,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--enable-all-themes \
                          --enable-test-themes \
-                         --disable-placeholders \
-                         --with-gtk=3.0")
+                         --disable-placeholders")
 
 def build():
     autotools.make()

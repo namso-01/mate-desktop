@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libindicator</Name>
+        <Homepage>https://launchpad.net/libindicator</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>library</IsA>
+        <Summary>A set of symbols and convience functions that all indicators would like to use.</Summary>
+        <Description>Libary with a set of symbols and convience functions that all indicators would like to use (GTK+ 2 library)</Description>
+        <Archive sha1sum="25c8a0a150651ee6b2198df3f36fcbb49f0295c2" type="targz">https://launchpad.net/libindicator/12.10/12.10.1/+download/libindicator-12.10.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">indicator.patch</Patch>
+       </Patches>
+    </Source>
+    
+    <Package>
+        <Name>libindicator-gtk2</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Summary>libindicator'ün gtk2 ile derlenmiş paketidir.</Summary>
+        <Files>
+            <Path fileType="library">/usr/lib/libindicator.*</Path>
+            <Path fileType="library">/usr/lib/libindicator/indicator-loader</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libindicator-gtk2-devel</Name>
+        <Summary>libindicator-gtk2 için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libindicator-gtk2</Dependency>      
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/libindicator-0.4</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/indicator-0.4.pc</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libindicator-gtk3</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>      
+        </RuntimeDependencies>
+        <Summary>libindicator'ün gtk3 ile derlenmiş paketidir.</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/libindicator</Path>
+            <Path fileType="library">/usr/lib/libindicator3.*</Path>
+            <Path fileType="library">/usr/lib/libindicator/indicator-loader3</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libindicator-gtk3-devel</Name>
+        <Summary>libindicator-gtk3 için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libindicator-gtk3</Dependency>      
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/libindicator3-0.4</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/indicator3-0.4.pc</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>12.10.1</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

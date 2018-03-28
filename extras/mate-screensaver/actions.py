@@ -7,21 +7,29 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-xscreensaverdir=/usr/share/xscreensaver/config \
-                         --with-xscreensaverhackdir=/usr/lib/xscreensaver \
-                         --with-mit-ext \
-                         --with-libnotify \
-                         --enable-locking \
-                         --with-gtk=3.0 \
-                         --disable-static")
+    autotools.configure(" --enable-locking \
+                          --with-xf86gamma-ext \
+                          --with-kbd-layout-indicator \
+                          --with-systemd=no \
+                          --prefix=/usr \
+                          --enable-compile-warnings=yes \
+                          --enable-maintainer-mode \
+                          --enable-docbook-docs \
+                          --sysconfdir=/etc \
+                          --with-shadow \
+                          --with-xscreensaverdir=/usr/share/xscreensaver/config \
+                          --with-xscreensaverhackdir=/usr/lib/misc/xscreensaver")
+    
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 
 def build():
+    pisitools.ldflags.add("-lmate-menu")
     autotools.make()
 
 def install():

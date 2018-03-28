@@ -9,13 +9,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --disable-static \
-                         --disable-schemas-compile \
-	                     --disable-silent-rules \
-                         --disable-update-mimedb")
+    autotools.configure("--disable-schemas-compile --disable-static")
     
     # fix unused-direct-shlib-dependency
     pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")

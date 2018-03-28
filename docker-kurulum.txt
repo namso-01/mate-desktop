@@ -1,0 +1,8 @@
+sudo docker pull ertugerata/pisi-chroot-farm && sudo docker run -v /home/ata/pisi-2.0:/git -v /home/ata/pisi-2.0/build:/root -v /var/cache/pisi/archives:/var/cache/pisi/archives -v /var/cache/pisi/packages:/var/cache/pisi/packages -itd --security-opt=seccomp:unconfined ertugerata/pisi-chroot-farm bash && sudo docker attach lonely_kalam && service dbus start && pisi ur && pisi up -dvsy
+
+
+sudo docker start 4f78ca5902cd && sudo docker attach silly_hoover 
+
+service dbus start && pisi ix && pisi ar mate pisi-index.xml.xz && pisi ur && pisi -up -dvsy
+
+sudo docker stop 4f78ca5902cd

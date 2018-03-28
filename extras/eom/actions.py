@@ -10,11 +10,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.ldflags.add("-ldl -lutil")
+    pisitools.flags.add("-lexempi")
     autotools.configure("--prefix=/usr \
-                         --with-librsvg \
-                         --with-gtk=3.0 \
-                         --disable-python")
+                         --with-librsvg")
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
@@ -23,6 +21,7 @@ def build():
     autotools.make()
 
 def install():
+    #autotools.install()
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("README", "NEWS", "ChangeLog", "AUTHORS", "COPYING")

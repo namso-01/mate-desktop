@@ -11,8 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --disable-static")
+    autotools.configure("--disable-static")
     
     pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
 

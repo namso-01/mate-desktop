@@ -1,0 +1,13 @@
+01. gtkmm3                           ->      desktop / toolkit / gtk  
+02. gtksourceview3                   ->      desktop / toolkit / gtk
+03. libglade3                        ->      desktop / toolkit / gtk
+04. libwnck3                         ->      desktop / toolkit / gtk
+05. icon-naming-utils                ->      desktop / lookandfeel
+06. libXpresent                      ->      X11 / library
+07. libXtrans                        ->      X11 / library
+08. perl-xml-simple                  ->      programming / language / perl
+09. libgtop                          ->      desktop / gnome
+10. libpeas                          ->      desktop / gnome
+11. libindicator                     ->      desktop / gnome
+12. python-distutils-extra           ->      programming / language / python
+13. t1lib                            ->      office / postscript

@@ -11,8 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-startup-notification \
+    autotools.configure("--enable-startup-notification \
                          --disable-static")
     
     # for fix unused dependency

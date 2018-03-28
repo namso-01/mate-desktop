@@ -11,16 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-gtk-doc \
-                         --enable-djvu \
-                         --enable-dvi \
-                         --enable-epub \
-                         --enable-t1lib \
-                         --enable-pixbuf \
-                         --enable-comics \
-                         --enable-xps \
-                         --enable-introspection \
+    autotools.configure("--enable-gtk-doc \
                          --disable-static")
     
     # for fix unused dependency

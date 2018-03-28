@@ -12,43 +12,43 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for MATE desktop</Summary>
         <Description>gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="ca2895f20c660f178317ef5e1b480bfddf9c34fc" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-settings-daemon-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="0097568f6aab023a890be93dce275f4e62d96836" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-settings-daemon-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>nss-devel</Dependency>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>nss-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
             <Dependency>dconf-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>libXi-devel</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>polkit-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
             <Dependency>libmatekbd-devel</Dependency>
-            <Dependency>libxklavier-devel</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>
             <Dependency>libXxf86misc-devel</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency>-->
+            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>libmatemixer-devel</Dependency>
+            <Dependency>libcanberra-gtk-devel</Dependency>
+            <Dependency>libcanberra-gtk3-devel</Dependency>
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-settings-daemon</Name>
         <RuntimeDependencies>
-            <!--<Dependency>nss</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>dconf</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>dconf</Dependency>
             <Dependency>libXi</Dependency>
-            <Dependency>gstreamer</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libmatekbd</Dependency>
             <Dependency>libxklavier</Dependency>
-            <Dependency>mate-desktop</Dependency>
             <Dependency>libXxf86misc</Dependency>
-            <Dependency>gst-plugins-base</Dependency>-->
+            <Dependency>libmatemixer</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>libcanberra-gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -80,37 +80,9 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2014-06-07</Date>
-            <Version>1.8.1</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-02-02</Date>
-            <Version>1.6.2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-10-18</Date>
-            <Version>1.6.1</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

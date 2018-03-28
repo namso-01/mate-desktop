@@ -11,9 +11,8 @@ from pisi.actionsapi import get
 
 def setup():
     #çalışma alanını 2 satırda gösterir.
-    pisitools.dosed("applets/wncklet/org.mate.panel.applet.workspace-switcher.gschema.xml.in.in", "1", "2")
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-introspection \
+    #pisitools.dosed("applets/wncklet/org.mate.panel.applet.workspace-switcher.gschema.xml.in.in", "1", "2")
+    autotools.configure("--enable-introspection \
                          --disable-static")
         
     # for fix unused dependency

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mate-calc</Name>
+        <Summary xml:lang="tr">Mate hesap makinesi</Summary>
+        <Description xml:lang="tr">mate-calc, Mate kullanıcı ortamının hesap makinesi paketidir.</Description>
+    </Source>
+</PISI>

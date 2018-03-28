@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmatemixer</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>GPLv3.0</License>
+        <Icon>multimedia-volume-control</Icon>
+        <IsA>library</IsA>
+        <Summary>Mixer library for MATE Desktop</Summary>
+        <Description>libmatemixer is a mixer library for MATE desktop.</Description>
+        <Archive sha1sum="96021a3240264bdf0949658d88e07bcdc5d99fb1" type="tarxz">http://pub.mate-desktop.org/releases/1.20/libmatemixer-1.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>python-six</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libmatemixer</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libmatemixer-devel</Name>
+        <Summary>Development for files libmatemixer</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libmatemixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/pkgconfig/</Path>
+            <Path fileType="header">/usr/include/mate-mixer</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libmatemixer-doc</Name>
+        <Summary>libmatemixer-doc, Documentation files</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libmatemixer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

@@ -12,21 +12,21 @@
         <IsA>library</IsA>
         <Summary>Python binding for Mate CAJA</Summary>
         <Description>These are unstable bindings for the caja extension library.</Description>
-        <Archive sha1sum="6e9fa98bd3ee82106534dad3a464aebe436fa0a0" type="tarxz">http://pub.mate-desktop.org/releases/1.10/python-caja-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="ffc3d0e6337fc5883d6828ed8e69fab270e72e24" type="tarxz">http://pub.mate-desktop.org/releases/1.20/python-caja-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>mate-common</Dependency>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>caja-devel</Dependency>-->
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>python-six</Dependency>
+            <Dependency>python-devel</Dependency>
+            <Dependency>python-pygobject3-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>python-caja</Name>
         <RuntimeDependencies>
-            <!--<Dependency>gtk3</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
-            <Dependency>glib2</Dependency>
-            <Dependency>python</Dependency>-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -37,38 +37,10 @@
     </Package>
     
     <History>
-        <Update release="5">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-02-04</Date>
-            <Version>1.6.1</Version>
-            <Comment>Release Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-10-20</Date>
-            <Version>1.6.0</Version>
-            <Comment>First Release</Comment>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>

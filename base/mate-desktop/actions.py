@@ -12,14 +12,13 @@ from pisi.actionsapi import get
 
 def setup():
     #Change default xcursor
-    pisitools.dosed("schemas/org.mate.peripherals-mouse.gschema.xml.in.in", "<default>''</default>", "<default>'mate'</default>")
+    #pisitools.dosed("schemas/org.mate.peripherals-mouse.gschema.xml.in.in", "<default>''</default>", "<default>'mate'</default>")
     #Change default desktop image
-    pisitools.dosed("schemas/org.mate.background.gschema.xml.in.in", "backgrounds/mate/desktop/Stripes.png", "backgrounds/mate/nature/pisi.jpg")
+    #pisitools.dosed("schemas/org.mate.background.gschema.xml.in.in", "backgrounds/mate/desktop/Stripes.png", "backgrounds/mate/nature/pisi.jpg")
     autotools.configure("--prefix=/usr \
-                         --with-gtk=3.0 \
+                         --enable-mpaste \
                          --disable-static \
-                         --disable-schemas-compile \
-                         --enable-gtk-doc")
+                         --disable-gtk-doc")
 
 def build():
     autotools.make()

@@ -13,53 +13,50 @@
         <IsA>app:gui</IsA>
         <Summary>Atril is a document viewer for the MATE desktop</Summary>
         <Description>Atril is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</Description>
-        <Archive sha1sum="7abd5b9310d88cb5da05248f1c55bb9ac069ac28" type="tarxz">http://pub.mate-desktop.org/releases/1.10/atril-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="0cdb45a75bb7449f4339cd9d2f348d41168093b6" type="tarxz">http://pub.mate-desktop.org/releases/1.20/atril-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>atk-devel</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>python-six</Dependency>
+            <Dependency>djvu-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>djvu-devel</Dependency>
             <Dependency>caja-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>mate-common</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>t1lib-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
             <Dependency>libgxps-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
             <Dependency>libsecret-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libspectre-devel</Dependency>
-            <Dependency>texlive-bin-devel</Dependency>
-            <Dependency>poppler-glib-devel</Dependency>-->
+            <Dependency>webkit-gtk2-devel</Dependency>
+            <Dependency>poppler-glib-devel</Dependency>
+            <Dependency>caja-extensions-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>atril</Name>
         <RuntimeDependencies>
-            <!--<Dependency>atk</Dependency>
-            <Dependency>tiff</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>caja</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>djvu</Dependency>
+            <Dependency>tiff</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>pango</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>t1lib</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libgxps</Dependency>
             <Dependency>libsecret</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libspectre</Dependency>
-            <Dependency>poppler-glib</Dependency>-->
+            <Dependency>poppler-glib</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>mate-document-viewer</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-document-viewer</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/omf</Path>
@@ -87,15 +84,9 @@
         <Name>atril-devel</Name>
         <Summary>Atril development files</Summary>
         <RuntimeDependencies>
-            <!--<Dependency>gtk2-devel</Dependency>-->
+            <Dependency>gtk3-devel</Dependency>
             <Dependency release="current">atril</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>mate-document-viewer-devel</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-document-viewer-devel</Package>
-        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="config">/usr/lib/pkgconfig</Path>
@@ -108,35 +99,15 @@
         <RuntimeDependencies>
             <Dependency release="current">atril</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>mate-document-viewer-doc</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-document-viewer-doc</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

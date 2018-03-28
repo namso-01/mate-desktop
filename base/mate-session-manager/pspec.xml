@@ -13,21 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>MATE Session Manager</Summary>
         <Description>This package contains a session that can be started from a display manager such as MDM. It will load all necessary applications for a full-featured user session.</Description>
-        <Archive sha1sum="e3b3a2a37d8b56c12a48c33522c198b24d90314d" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-session-manager-1.10.1.tar.xz</Archive>
+        <Archive sha1sum="198ef02c1ed6fe59960a86091da3304f51b94e16" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-session-manager-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>gtk3-devel</Dependency>
-            <Dependency>libSM-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>libICE-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>  
+            <Dependency>marco-devel</Dependency>
             <Dependency>upower-devel</Dependency>
-            <Dependency>libXtst-devel</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libXrender-devel</Dependency>
-            <Dependency>mate-polkit-devel</Dependency>
-            <Dependency>icon-theme-hicolor</Dependency>
-            <Dependency>mate-control-center-devel</Dependency>
-            <Dependency>mate-settings-daemon-devel</Dependency>-->            
+            <Dependency>xdg-user-dirs</Dependency>
+            <Dependency>libXtrans-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency> 
         </BuildDependencies>
     </Source>
 
@@ -35,9 +30,12 @@
       <Name>mate-session-manager</Name>
       <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>upower</Dependency>
+            <Dependency>libXau</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -59,33 +57,12 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-06-07</Date>
-            <Version>1.8.1</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-04-07</Date>
-            <Version>1.8.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-10-18</Date>
-            <Version>1.6.1</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>

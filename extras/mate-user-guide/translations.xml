@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mate-user-guide</Name>
+        <Summary xml:lang="en">Mate use guide</Summary>
+        <Description xml:lang="en">This package contains documents which will be packaged together and shipped as mate-user-guide in the core MATE distribution.</Description>
+    </Source>
+</PISI>

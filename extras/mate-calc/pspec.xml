@@ -1,0 +1,57 @@
+
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-calc</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
+        <Icon>desktop</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Calculator for the Mate desktop environment</Summary>
+        <Description>mate-calc, Mate masaüstü için hesap makinesi.</Description>
+        <Archive sha1sum="6e1583aacf129660278bdff8324e88a464481950" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-calc-1.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-calc</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>glib2</Dependency>       
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/mate-calc</Path>
+            <Path fileType="data">/usr/share/appdata/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

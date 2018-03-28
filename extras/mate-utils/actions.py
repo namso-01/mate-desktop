@@ -11,10 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-deprecated \
-                         --disable-maintainer-flags \
-                         --disable-static")
+    autotools.configure("--disable-maintainer-flags")
     
     # for fix unused dependency
     pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")

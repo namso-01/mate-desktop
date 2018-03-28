@@ -12,40 +12,21 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ based window manager</Summary>
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
-        <Archive sha1sum="aada9e6e34d9aa86771021ffca14d4f1482f2310" type="tarxz">http://pub.mate-desktop.org/releases/1.10/marco-1.10.1.tar.xz</Archive>
+        <Archive sha1sum="219ff9e3d3a4062392098f0580bdf2e42e90c71d" type="tarxz">http://pub.mate-desktop.org/releases/1.20/marco-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>zenity</Dependency>
+            <Dependency>zenity</Dependency>
             <Dependency>itstool</Dependency>
-            <Dependency>atk-devel</Dependency>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
+            <Dependency>intltool</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>mate-dialogs</Dependency>
             <Dependency>libICE-devel</Dependency>
-            <Dependency>libXext-devel</Dependency>
-            <Dependency>libgtop-devel</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>libXrandr-devel</Dependency>
-            <Dependency>libXfixes-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>libXcursor-devel</Dependency>
-            <Dependency>libXrender-devel</Dependency>
-            <Dependency>libXdamage-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>libXinerama-devel</Dependency>
-            <Dependency>libXcomposite-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
-            <Dependency versionFrom="1.10.0">mate-desktop-devel</Dependency>-->
+            <Dependency>libXpresent-devel</Dependency>
+            <Dependency>libcanberra-gtk-devel</Dependency>
+            <Dependency>libcanberra-gtk3-devel</Dependency>
+            <Dependency versionFrom="1.20.0">mate-desktop-devel</Dependency>
+            <Dependency versionFrom="1.20.0">mate-settings-daemon-devel</Dependency>
         </BuildDependencies>        
         <!--<AdditionalFiles>
             <AdditionalFile target="src/window.png">window.png</AdditionalFile>
-            <AdditionalFile target="src/mini-window.png">mini-window.png</AdditionalFile>
-            <AdditionalFile target="src/stock_delete.png">stock_delete.png</AdditionalFile>
-            <AdditionalFile target="src/stock_maximize.png">stock_maximize.png</AdditionalFile>
-            <AdditionalFile target="src/stock_minimize.png">stock_minimize.png</AdditionalFile>
         </AdditionalFiles>-->
         <Patches>
             <!--<Patch level="1">marco_add-pixbuf-inline-icons.patch</Patch>-->
@@ -56,33 +37,27 @@
     <Package>
         <Name>marco</Name>
         <RuntimeDependencies>
-            <!--<Dependency>atk</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libICE</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>libXext</Dependency>
-            <Dependency>libgtop</Dependency>
-            <Dependency>libXrandr</Dependency>
             <Dependency>libXfixes</Dependency>
+            <Dependency>libXrandr</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>fontconfig</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>libXpresent</Dependency>
             <Dependency>libXinerama</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>startup-notification</Dependency>-->
+            <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>startup-notification</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>mate-window-manager</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-window-manager</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -107,12 +82,6 @@
             <Dependency>gtk3-devel</Dependency>
             <Dependency release="current">marco</Dependency>
          </RuntimeDependencies>
-        <Replaces>
-            <Package>mate-window-manager-devel</Package>
-        </Replaces>
-        <Conflicts>
-            <Package>mate-window-manager-devel</Package>
-        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
@@ -120,30 +89,9 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2015-06-25</Date>
-            <Version>1.10.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-09-17</Date>
-            <Version>1.8.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Richard de Bruin</Name>
-            <Email>richdb@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-08-10</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
+            <Date>2018-03-15</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

@@ -11,10 +11,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--enable-applets \
-                         --enable-unique \
-                         --with-gtk=3.0 \
-                         --disable-strict")
+    autotools.configure("--enable-applets")
 
 def build():
     autotools.make()

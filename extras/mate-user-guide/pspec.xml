@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-user-guide</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>mate-file-share-properties</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Mate user guide</Summary>
+        <Description>mate-user-guide,This package contains documents which will be packaged together and shipped as mate-user-guide in the core MATE distribution. </Description>
+        <Archive sha1sum="31e43207d7173653a39941994ede98db2265c093" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-user-guide-1.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-user-guide</Name>
+        <Files>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

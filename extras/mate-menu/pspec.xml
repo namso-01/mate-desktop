@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-menu</Name>
+        <Homepage>https://bitbucket.org/ubuntu-mate/mate-menu</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Mate Menu</Summary>
+        <Description>mate-menu, Advanced menu for MATE Panel, a fork of MintMenu.</Description>
+        <Archive sha1sum="6adab8794af4e298165fb9c171b6553b5376240f" type="targz">https://github.com/ubuntu-mate/mate-menu/archive/18.04.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>intltool</Dependency>
+            <Dependency>mate-panel-devel</Dependency>
+            <Dependency>python-setuptools</Dependency>
+            <Dependency>python-distutils-extra</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-menu</Name>
+        <Files>
+          <Path fileType="doc">/usr/share/doc</Path>
+          <Path fileType="man">/usr/share/man</Path>
+          <Path fileType="data">/usr/share/dbus-1</Path>
+          <Path fileType="data">/usr/share/glib-2.0</Path>
+          <Path fileType="data">/usr/share/mate-menu</Path>
+          <Path fileType="library">/usr/lib/mate-menu</Path>
+          <Path fileType="data">/usr/share/mate-panel</Path>
+          <Path fileType="localedata">/usr/share/locale</Path>
+          <Path fileType="executable">/usr/bin/mate-menu</Path>
+          <Path fileType="library">/usr/lib/python2.7/site-packages</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

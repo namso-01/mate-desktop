@@ -14,7 +14,6 @@ def setup():
     autotools.configure("--disable-static \
                          --disable-schemas-compile \
                          --with-gnu-ld \
-                         --with-gtk=3.0 \
                          --disable-update-mimedb")
     
     # for fix unused dependency
@@ -26,4 +25,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README", "TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README")

@@ -10,8 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--with-gtk=3.0 \
-                         --enable-upower")
+    autotools.configure("--enable-upower")
 
 def build():
     autotools.make()

@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>caja-dropbox</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Mate file manager eklentileri</Summary>
+        <Description>caja-extensions, Mate file manager eklentileri.</Description>
+        <Archive sha1sum="10f85879fa2a589f1991ef48b786248d110855a4" type="tarxz">http://pub.mate-desktop.org/releases/1.20/caja-dropbox-1.20.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>docutils</Dependency>
+            <Dependency>python-gtk-devel</Dependency>
+            <Dependency>caja-extensions-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>caja-dropbox</Name>
+        <RuntimeDependencies>
+            <Dependency>caja</Dependency> 
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/caja</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/caja-dropbox</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>

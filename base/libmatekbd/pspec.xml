@@ -13,25 +13,24 @@
         <IsA>library</IsA>
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
-        <Archive sha1sum="d4e5b69dde4f57bbd01029bee2f414be98882897" type="tarxz">http://pub.mate-desktop.org/releases/1.12/libmatekbd-1.12.0.tar.xz</Archive>
+        <Archive sha1sum="c3b08604efb5a915a77e778722686282941998ee" type="tarxz">http://pub.mate-desktop.org/releases/1.20/libmatekbd-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>gtk3-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
             <Dependency>libxklavier-devel</Dependency>
-            <Dependency>desktop-file-utils</Dependency>-->
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>libmatekbd</Name>
         <RuntimeDependencies>
-            <!--<Dependency>gtk3</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>libX11</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libxklavier</Dependency>-->
+            <Dependency>libxklavier</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -49,48 +48,22 @@
         <Name>libmatekbd-devel</Name>
         <Summary>libmatekbd için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-             <!--<Dependency>gtk3-devel</Dependency>
+             <Dependency>gtk3-devel</Dependency>
              <Dependency>libxklavier-devel</Dependency>
-             <Dependency release="current">libmatekbd</Dependency>-->
+             <Dependency release="current">libmatekbd</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include/libmatekbd</Path>
+            <Path fileType="header">/usr/share/gir-1.0/Matekbd-1.0.gir</Path>
+            <Path fileType="header">/usr/lib/girepository-1.0/Matekbd-1.0.typelib</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-02-02</Date>
-            <Version>1.6.2</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-07-25</Date>
-            <Version>1.6.1</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

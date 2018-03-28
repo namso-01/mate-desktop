@@ -10,17 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--prefix=/usr \
-                         --sysconfdir=/etc \
-                         --enable-polkit \
-                         --enable-networkmanager \
-                         --enable-ipv6 \
-                         --with-gtk=3.0 \
-                         --with-x \
-                         --disable-schemas-compile \
-                         --with-cpufreq-lib=cpupower \
-                         --disable-static \
-                         --enable-stickynotes")
+    autotools.configure("--enable-polkit \
+                         --enable-ipv6 ")
 
 def build():
     autotools.make()

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gtkmm3</Name>
+        <Homepage>http://gtkmm3.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>C++ binding for GTK+</Summary>
+        <Description>gtkmm3 is the official C++ interface for the popular GUI library GTK+. Highlights include typesafe callbacks, and a comprehensive set of widgets that are easily extensible via inheritance.</Description>
+        <Archive sha1sum="f6c8a790241fbe19353bbdf5aefa6a1732892de0" type="tarxz">https://git.gnome.org/browse/gtkmm/snapshot/gtkmm-3.22.2.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mm-common</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>atkmm-devel</Dependency>
+            <Dependency>pangomm-devel</Dependency>
+            <Dependency>perl-XML-Parser</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gtkmm3</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>glibmm</Dependency>
+            <Dependency>cairomm</Dependency>
+            <Dependency>pangomm</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gtkmm3-devel</Name>
+        <Summary>Development files for gtkmm3</Summary>
+        <RuntimeDependencies>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>atkmm-devel</Dependency>
+            <Dependency>glibmm-devel</Dependency>
+            <Dependency>pangomm-devel</Dependency>
+            <Dependency>cairomm-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency release="current">gtkmm3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-04-01</Date>
+            <Version>3.22.2</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

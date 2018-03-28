@@ -13,28 +13,24 @@
         <IsA>library</IsA>
         <Summary>User level public file sharing via WebDAV or ObexFTP</Summary>
         <Description>mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
-        <Archive sha1sum="2f6dd6a05e6c1894272b6a0d7348e709196bb947" type="tarxz">http://pub.mate-desktop.org/releases/1.10/mate-user-share-1.10.0.tar.xz</Archive>
+        <Archive sha1sum="78a43cabfaf595658e5e71f80881ccb36140bf29" type="tarxz">http://pub.mate-desktop.org/releases/1.20/mate-user-share-1.20.0.tar.xz</Archive>
         <BuildDependencies>
-            <!--<Dependency>gtk2-devel</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
             <Dependency>caja-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>libunique-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>libcanberra-devel</Dependency>-->
+            <Dependency>caja-extensions-devel</Dependency>
+            <Dependency>libcanberra-gtk3-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-user-share</Name>
         <RuntimeDependencies>
-            <!--<Dependency>gtk2</Dependency>
             <Dependency>caja</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>libunique</Dependency>
-            <Dependency>libnotify</Dependency>
-            <Dependency>libcanberra</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>-->
+            <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -49,43 +45,14 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/mate-user-share</Path>
-            <Path fileType="data">/usr/share/MateConf/gsettings/</Path>
             <Path fileType="data">/usr/share/caja/extensions/libcaja-user-share.caja-extension</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2015-06-25</Date>
-            <Version>1.10.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2014-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Release bump for gcc</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2014-04-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-02-04</Date>
-            <Version>1.6.1</Version>
-            <Comment>Release Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-10-20</Date>
-            <Version>1.6.0</Version>
+            <Date>2018-04-01</Date>
+            <Version>1.20.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

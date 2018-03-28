@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>icon-naming-utils</Name>
+        <Summary xml:lang="en">The icon-naming-utils package contains a Perl script used for maintaining backwards compatibility with current desktop icon themes</Summary>
+        <Description xml:lang="en">The icon-naming-utils package contains a Perl script used for maintaining backwards compatibility with current desktop icon themes, while migrating to the names specified in the Icon Naming Specification.</Description>
+    </Source>
+</PISI>

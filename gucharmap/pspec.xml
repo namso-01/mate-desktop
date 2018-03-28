@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gucharmap</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Gnome Unicode Charmap</Summary>
+        <Description>gucharmap,gucharmap is the GNOME Character Map, based on the Unicode Character Database.</Description>
+        <Archive sha1sum="d5e9487f446253dd41b77959a345d27e3a5c566a" type="tarxz">https://git.gnome.org/browse/gucharmap/snapshot/gucharmap-10.0.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>unzip</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>itstool</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>dconf-devel</Dependency>
+            <Dependency>gnome-common</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gucharmap</Name>
+        <RuntimeDependencies>
+            <!--<Dependency>libXau</Dependency>-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="info">/usr/share/info</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gucharmap-devel</Name>
+        <Summary>gucharmap için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">gucharmap</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gucharmap-docs</Name>
+        <IsA>data:doc</IsA>
+        <Summary>gucharmap reference documents</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2018-04-01</Date>
+            <Version>10.0.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>
